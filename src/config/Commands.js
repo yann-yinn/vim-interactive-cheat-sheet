@@ -6,15 +6,56 @@ export default [
     keywords: "quit qut qti qt qti"
   },
   {
+    label: "quit",
+    mode: "insert",
+    command: "<ESC> :q",
+    keywords: "escape quit qut qti qt qti"
+  },
+  {
     label: "quit without saving",
     mode: "normal",
-    description: "",
+    command: "q!",
+    keywords: "escape quit qut quti qt qti"
+  },
+  {
+    label: "quit",
+    mode: "insert",
+    command: "<ESC> :q",
+    keywords: "quit qut qti qt qti"
+  },
+  {
+    label: "insert mode.",
+    description: "insert mode. Next keys typed are inserted into the file.",
+    mode: "normal",
     command: ":q!",
-    keywords: "quit qut quti qt qti"
+    keywords: "insert write edit insrt"
+  },
+  {
+    label: "move left",
+    mode: "normal",
+    command: "h",
+    keywords: "move left letf mve moe mvoe"
+  },
+  {
+    label: "move right",
+    mode: "normal",
+    command: "l",
+    keywords: "move riht rgith right mve moe mvoe"
+  },
+  {
+    label: "move up",
+    mode: "normal",
+    command: "k",
+    keywords: "move up mve moe mvoe"
+  },
+  {
+    label: "move down",
+    mode: "normal",
+    command: "j",
+    keywords: "move down dwn mve moe mvoe"
   },
   {
     label: "save",
-    description: "",
     mode: "normal",
     command: ":w",
     keywords: "save saving sve"

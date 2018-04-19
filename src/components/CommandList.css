@@ -4,9 +4,22 @@
   margin: auto;
   text-align: left;
   font-size: 30px;
+  border-collapse: collapse;
+}
+
+.CommandList .command {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.CommandList table tr td {
+  padding: 10px;
 }
 
 .CommandList table tr td {
   border-bottom: solid silver 1px;
-  padding: 5px;
+}
+
+.CommandList .description {
+  font-size: 15px;
 }

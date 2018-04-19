@@ -11,6 +11,14 @@ export default class CommandList extends React.Component {
     return (
       <div className="CommandList">
         <table>
+          {/*
+          <thead>
+            <th>label</th>
+            <th>mode</th>
+            <th>command</th>
+            <th>description</th>
+          </thead>
+          */}
           <tbody>
             {commands
               .filter(
@@ -21,7 +29,8 @@ export default class CommandList extends React.Component {
                   <tr key={index}>
                     <td>{command.label}</td>
                     <td>{command.mode}</td>
-                    <td>{command.command}</td>
+                    <td className="command">{command.command}</td>
+                    <td className="description">{command.description}</td>
                   </tr>
                 );
               })}
