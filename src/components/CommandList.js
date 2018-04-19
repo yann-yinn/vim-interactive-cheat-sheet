@@ -19,7 +19,8 @@ export default class CommandList extends React.Component {
               .map((command, index) => {
                 return (
                   <tr key={index}>
-                    <td>{command.name}</td>
+                    <td>{command.label}</td>
+                    <td>{command.mode}</td>
                     <td>{command.command}</td>
                   </tr>
                 );

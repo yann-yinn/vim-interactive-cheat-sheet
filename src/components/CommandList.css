@@ -1,6 +1,12 @@
 .CommandList table {
-  width: 400px;
+  max-width: 800px;
+  min-width: 800px;
   margin: auto;
   text-align: left;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.CommandList table tr td {
+  border-bottom: solid silver 1px;
+  padding: 5px;
 }

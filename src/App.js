@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import SearchForm from "./components/SearchForm";
 import CommandList from "./components/CommandList";
+import Header from "./components/Header";
 import commands from "./config/Commands";
-import logo from "./logo.svg";
-import "./App.css";
 
 class App extends Component {
   state = {
@@ -12,10 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Vim commands</h1>
-        </header>
+        <Header />
         <SearchForm
           onTextChange={value => this.setState({ searched: value })}
         />
