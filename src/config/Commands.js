@@ -1,5 +1,11 @@
 export default [
   {
+    label: "Switch to command mode",
+    mode: "insert",
+    command: "<Esc>",
+    keywords: "switch command mode change mode"
+  },
+  {
     label: "quit",
     mode: "normal",
     command: ":q",
@@ -67,6 +73,36 @@ export default [
     keywords: "move down dwn mve moe mvoe"
   },
   {
+    label: "page up",
+    mode: "normal",
+    command: "<Ctrl> + u",
+    keywords: "page up pge up"
+  },
+  {
+    label: "delete the current line",
+    mode: "normal",
+    command: "dd",
+    keywords: "delete line current"
+  },
+  {
+    label: "copy the current line",
+    mode: "normal",
+    command: "yy",
+    keywords: "copy current line"
+  },
+  {
+    label: "paste",
+    mode: "normal",
+    command: "p",
+    keywords: "paste pste psate"
+  },
+  {
+    label: "page down",
+    mode: "normal",
+    command: "<Ctrl> + d",
+    keywords: "page down pge down"
+  },
+  {
     label: "save",
     mode: "normal",
     command: ":w",
@@ -113,8 +149,49 @@ export default [
   {
     label: "Redo",
     mode: "normal",
-    command: "<CTRL> R",
+    command: "<Ctrl> + r",
     keywords: "redo"
+  },
+  {
+    label: "delete character",
+    mode: "normal",
+    description: "Delete [count] characters under and after the cursor",
+    command: "x",
+    keywords: "delete delte"
+  },
+  {
+    label: "delete character",
+    mode: "normal",
+    description: "Delete [count] characters before the cursor",
+    command: "X",
+    keywords: "dkte delete delte"
+  },
+  {
+    label: "selecting text",
+    mode: "normal",
+    description: "start Visual mode per character.",
+    command: "v",
+    keywords: "slecting selecting selct"
+  },
+  {
+    label: "replace character",
+    mode: "normal",
+    description:
+      "Enter Insert mode, replacing characters rather than inserting",
+    command: "R",
+    keywords: "replace rplace replce"
+  },
+  {
+    label: "indentation",
+    mode: "normal",
+    command: "gg=G",
+    keywords: "autoindent auto-index autoindentation reindent re-indent"
+  },
+  {
+    label: "enable line numbers",
+    mode: "normal",
+    command: ":set number",
+    keywords: "display line numbers enable line numbers"
   },
   {
     label: "Search",
