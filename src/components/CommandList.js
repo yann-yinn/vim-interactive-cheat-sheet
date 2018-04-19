@@ -19,6 +19,7 @@ export default class CommandList extends React.Component {
             <th>description</th>
           </thead>
           */}
+          {/*commands.length + "commandes" */}
           <tbody>
             {commands
               .filter(

@@ -88,7 +88,7 @@ export default [
     label: "copy the current line",
     mode: "normal",
     command: "yy",
-    keywords: "copy current line"
+    keywords: "copy current line copu cpy"
   },
   {
     label: "paste",
