@@ -108,7 +108,13 @@ export default [
     label: "Undo",
     mode: "normal",
     command: "u",
-    keywords: "undo udo ndo udno"
+    keywords: "undo udo ndo udno ctrl-z ctrl z"
+  },
+  {
+    label: "Redo",
+    mode: "normal",
+    command: "<CTRL> R",
+    keywords: "redo"
   },
   {
     label: "Search",
