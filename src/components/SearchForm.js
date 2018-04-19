@@ -4,7 +4,7 @@ import "./SearchForm.css";
 
 export default class extends React.Component {
   state = {
-    text: "coucou"
+    text: ""
   };
   static propTypes = {
     onSubmit: PropTypes.func,

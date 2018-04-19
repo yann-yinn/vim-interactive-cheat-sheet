@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./CommandList.css";
 
 export default class CommandList extends React.Component {
   static propTypes = {
@@ -8,16 +9,23 @@ export default class CommandList extends React.Component {
   render() {
     const { commands } = this.props;
     return (
-      <div>
-        {commands
-          .filter(command => command.name.indexOf(this.props.searched) !== -1)
-          .map((command, index) => {
-            return (
-              <div key={index}>
-                <h2>{command.name}</h2>
-              </div>
-            );
-          })}
+      <div className="CommandList">
+        <table>
+          <tbody>
+            {commands
+              .filter(
+                command => command.keywords.indexOf(this.props.searched) !== -1
+              )
+              .map((command, index) => {
+                return (
+                  <tr key={index}>
+                    <td>{command.name}</td>
+                    <td>{command.command}</td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        </table>
       </div>
     );
   }
