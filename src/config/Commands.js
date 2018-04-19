@@ -197,7 +197,7 @@ export default [
     label: "Search",
     mode: "normal",
     command: "/myWord",
-    keywords: "srch earch search saerch"
+    keywords: "/ srch earch search saerch"
   },
   {
     label: "Search",
