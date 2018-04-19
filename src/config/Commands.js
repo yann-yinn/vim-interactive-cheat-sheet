@@ -24,6 +24,18 @@ export default [
     keywords: "quit qut qti qt qti"
   },
   {
+    label: "write and quit",
+    mode: "normal",
+    command: ":x",
+    keywords: "quit qut qti qt qti"
+  },
+  {
+    label: "write and quit",
+    mode: "insert",
+    command: "<ESC> :x",
+    keywords: "quit qut qti qt qti"
+  },
+  {
     label: "insert mode.",
     description: "insert mode. Next keys typed are inserted into the file.",
     mode: "normal",
@@ -85,5 +97,29 @@ export default [
     mode: "normal",
     keywords: "syntax color sntax clor highlighting",
     command: ":syntax on"
+  },
+  {
+    label: "Insert at new line below",
+    mode: "normal",
+    command: "o",
+    keywords: "Insert new line below nw lne inster insert below"
+  },
+  {
+    label: "Undo",
+    mode: "normal",
+    command: "u",
+    keywords: "undo udo ndo udno"
+  },
+  {
+    label: "Search",
+    mode: "normal",
+    command: "/myWord",
+    keywords: "srch earch search saerch"
+  },
+  {
+    label: "Search",
+    mode: "insert",
+    command: "<ESC> /myWord",
+    keywords: "srch earch search saerch"
   }
 ];
