@@ -161,17 +161,17 @@ export default [
     keywords: "dkte delete delte"
   },
   {
-    label: "selecting text",
+    label: "selecting text (characters)",
     mode: "normal",
     description: "start Visual mode per character.",
     command: "v",
     keywords: "slecting selecting selct"
   },
   {
-    label: "selecting text",
+    label: "selecting text (lines)",
     mode: "normal",
-    description: "start Visual mode per character.",
-    command: "v",
+    description: "start Visual mode per line.",
+    command: "V",
     keywords: "slecting selecting selct"
   },
   {
@@ -181,6 +181,27 @@ export default [
       "Enter Insert mode, replacing characters rather than inserting",
     command: "R",
     keywords: "replace rplace replce"
+  },
+  {
+    label: "search and replace",
+    mode: "normal",
+    description: "Replace all occurences of old by new in file",
+    command: ":%s/old/new/g",
+    keywords: "search reaplce serch sarch sreach rplace"
+  },
+  {
+    label: "search and replace (with confirmation)",
+    mode: "normal",
+    description: "Replace all occurences of old by new in file",
+    command: ":%s/old/new/gw",
+    keywords: "search reaplce serch sarch sreach rplace"
+  },
+  {
+    label: "search and replace (case insensitive)",
+    mode: "normal",
+    description: "Replace all occurences of old by new in file",
+    command: ":%s/old/new/gi",
+    keywords: "search reaplce serch sarch sreach rplace"
   },
   {
     label: "indentation",
@@ -195,9 +216,17 @@ export default [
     keywords: "display line numbers enable line numbers"
   },
   {
-    label: "Search",
+    label: "Search (top to bottom)",
     mode: "normal",
     command: "/myWord",
+    description: "search word from top to bottom",
+    keywords: "/ srch earch search saerch"
+  },
+  {
+    label: "Search (bottom to top)",
+    mode: "normal",
+    command: "?myWord",
+    description: "search word from bottom to top",
     keywords: "/ srch earch search saerch"
   },
   {
