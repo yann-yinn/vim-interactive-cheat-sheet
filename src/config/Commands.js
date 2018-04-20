@@ -115,7 +115,7 @@ export default [
     command: "A"
   },
   {
-    label: "apprend text",
+    label: "append text",
     description: "Insert text before the current cursor position",
     mode: "normal",
     keywords: "write writing writ wrt edit editing edt",
