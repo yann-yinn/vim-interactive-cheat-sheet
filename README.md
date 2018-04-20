@@ -9,3 +9,7 @@ cd vim-commands
 yarn install
 yarn start
 ```
+
+## contribute
+
+All the commands are located in src/config/Commands.js file.
