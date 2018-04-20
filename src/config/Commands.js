@@ -39,7 +39,7 @@ export default [
     label: "insert mode.",
     description: "insert mode. Next keys typed are inserted into the file.",
     mode: "normal",
-    command: ":q!",
+    command: "i",
     keywords: "insert write edit insrt"
   },
   {
