@@ -1,11 +1,5 @@
 export default [
   {
-    label: "Switch to command mode",
-    mode: "insert",
-    command: "<Esc>",
-    keywords: "switch command mode change mode"
-  },
-  {
     label: "quit",
     mode: "normal",
     command: ":q",
@@ -174,6 +168,13 @@ export default [
     keywords: "slecting selecting selct"
   },
   {
+    label: "selecting text",
+    mode: "normal",
+    description: "start Visual mode per character.",
+    command: "v",
+    keywords: "slecting selecting selct"
+  },
+  {
     label: "replace character",
     mode: "normal",
     description:
@@ -204,5 +205,11 @@ export default [
     mode: "insert",
     command: "<ESC> /myWord",
     keywords: "srch earch search saerch"
+  },
+  {
+    label: "Switch to command mode",
+    mode: "insert",
+    command: "<Esc>",
+    keywords: "switch command mode change mode"
   }
 ];
