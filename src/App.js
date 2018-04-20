@@ -14,6 +14,9 @@ class App extends Component {
       <div className="App">
         <ForkMe url={"https://github.com/nyl-auster/vim-command"} />
         <Header />
+        <div style={{ textAlign: "center" }}>
+          <em>search within the {commands.length} commands</em>
+        </div>
         <SearchForm
           onTextChange={value => this.setState({ searched: value })}
         />

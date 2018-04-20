@@ -187,21 +187,21 @@ export default [
     mode: "normal",
     description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/g",
-    keywords: "search reaplce serch sarch sreach rplace"
+    keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace (with confirmation)",
     mode: "normal",
     description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gw",
-    keywords: "search reaplce serch sarch sreach rplace"
+    keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace (case insensitive)",
     mode: "normal",
     description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gi",
-    keywords: "search reaplce serch sarch sreach rplace"
+    keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
     label: "indentation",
