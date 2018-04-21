@@ -1,14 +1,6 @@
 // thanks https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
 export default [
   {
-    label: "Switch to normal (command) mode",
-    mode: "insert",
-    command: "<Esc>",
-    description:
-      'if you are in "insert" or "visual" mode, press <ESC> to go back to normal mode',
-    keywords: "switch command mode change"
-  },
-  {
     label: "quit",
     mode: "normal",
     command: ":q",
@@ -37,25 +29,25 @@ export default [
     keywords: "insert write edit insrt"
   },
   {
-    label: "move left",
+    label: "⬅️ move left",
     mode: "normal",
     command: "h",
     keywords: "move cursor crsor left letf mve moe mvoe"
   },
   {
-    label: "move right",
+    label: "➡️ move right",
     mode: "normal",
     command: "l",
     keywords: "move cursor crsor riht rgith right mve moe mvoe"
   },
   {
-    label: "move up",
+    label: "⬆️ move up",
     mode: "normal",
     command: "k",
     keywords: "move up mve moe mvoe cursor cursr crsor"
   },
   {
-    label: "move down",
+    label: "⬇️ move down",
     mode: "normal",
     command: "j",
     keywords: "move down dwn mve moe mvoe cursor cursr crsor"
