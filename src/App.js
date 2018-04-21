@@ -19,7 +19,7 @@ class App extends Component {
         <Header />
         <Container>
           <div style={{ textAlign: "center" }}>
-            <em>search within the {commands.length} commands</em>
+            <em>search within {commands.length} vim usefull commands</em>
           </div>
         </Container>
         <SearchForm

@@ -180,11 +180,22 @@ export default [
     command: "A"
   },
   {
-    label: "syntax highlighting",
-    description: "Turn on color syntax highlighting",
+    label: "turn on syntax highlighting",
     mode: "normal",
     keywords: "syntax color sntax clor highlighting",
     command: ":syntax on"
+  },
+  {
+    label: "turn off syntax highlighting",
+    mode: "normal",
+    keywords: "syntax color sntax clor highlighting",
+    command: ":syntax off"
+  },
+  {
+    label: "set syntax highlighting language",
+    mode: "normal",
+    keywords: "syntax color sntax clor highlighting language",
+    command: ":set syntax=javascript"
   },
   {
     label: "Insert at new line below",
@@ -303,41 +314,77 @@ export default [
     keywords: "autoindent auto-index autoindentation reindent re-indent"
   },
   {
+    label: "re-indent current line",
+    mode: "normal",
+    command: "==",
+    keywords: "autoindent indent auto-index autoindentation reindent re-indent"
+  },
+  {
     label: "enable line numbers",
     mode: "normal",
     command: ":set number",
     keywords: "display line numbers enable line numbers"
   },
   {
-    label: "Search (top to bottom)",
+    label: "search (top to bottom)",
     mode: "normal",
     command: "/myWord",
     description: "search word from top to bottom",
     keywords: "/ srch earch search saerch"
   },
   {
-    label: "Search (bottom to top)",
+    label: "search (bottom to top)",
     mode: "normal",
     command: "?myWord",
     description: "search word from bottom to top",
     keywords: "/ srch earch search saerch"
   },
   {
-    label: "Search",
+    label: "search",
     mode: "normal",
     command: "/myWord",
     keywords: "srch earch search saerch"
   },
   {
-    label: "Open file explorer (spleen screen horizontally)",
+    label: "open file explorer (spleen screen horizontally)",
     mode: "normal",
     command: ":Sex",
     keywords: "file explorer browser explrer brower browsr"
   },
   {
-    label: "Open file explorer (spleen screen vertically)",
+    label: "open file explorer (spleen screen vertically)",
     mode: "normal",
     command: ":Vex",
     keywords: "file explorer browser explrer brower browsr"
+  },
+  {
+    label: "open new tab",
+    mode: "normal",
+    command: ":tabnew",
+    keywords: "open new tab"
+  },
+  {
+    label: "show next tab",
+    mode: "normal",
+    command: ":gt",
+    keywords: "show next tab"
+  },
+  {
+    label: "Turn on auto-indent",
+    mode: "normal",
+    command: ":set autoindent",
+    keywords: "set autoindent auto-indent"
+  },
+  {
+    label: "indent",
+    mode: "normal",
+    command: ">>",
+    keywords: "indent"
+  },
+  {
+    label: "Un-indent",
+    mode: "normal",
+    command: "<<",
+    keywords: "unindent un-indent"
   }
 ];
