@@ -8,32 +8,34 @@ export default class CommandList extends React.Component {
   };
   render() {
     const { commands } = this.props;
+    let results = commands.filter(
+      command => command.keywords.indexOf(this.props.searched) !== -1
+    );
+    if (results.length === 0) {
+      return (
+        <div
+          style={{ textAlign: "center", fontSize: "20px", margin: "40px" }}
+          className="CommandList"
+        >
+          No results found{" "}
+          <span role="img" aria-label="face ashamed">
+            😓
+          </span>
+        </div>
+      );
+    }
     return (
       <div className="CommandList">
         <table>
-          {/*
-          <thead>
-            <th>label</th>
-            <th>mode</th>
-            <th>command</th>
-            <th>description</th>
-          </thead>
-          */}
-          {/*commands.length + "commandes" */}
           <tbody>
-            {commands
-              .filter(
-                command => command.keywords.indexOf(this.props.searched) !== -1
-              )
-              .map((command, index) => {
-                return (
-                  <tr key={index}>
-                    <td>{command.label}</td>
-                    <td className="command">{command.command}</td>
-                    {/*<td className="description">{command.description}</td>*/}
-                  </tr>
-                );
-              })}
+            {results.map((command, index) => {
+              return (
+                <tr key={index}>
+                  <td>{command.label}</td>
+                  <td className="command">{command.command}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
