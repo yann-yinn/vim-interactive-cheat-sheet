@@ -1,21 +1,33 @@
+// thanks https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
 export default [
+  {
+    label: "Switch to normal (command) mode",
+    mode: "insert",
+    command: "<Esc>",
+    description:
+      'if you are in "insert" or "visual" mode, press <ESC> to go back to normal mode',
+    keywords: "switch command mode change"
+  },
   {
     label: "quit",
     mode: "normal",
     command: ":q",
+    description: "press <Esc> key before, if you are in insert mode",
     keywords: "quit qut qti qt qti"
   },
   {
     label: "quit without saving",
     mode: "normal",
-    command: "q!",
-    keywords: "escape quit qut quti qt qti"
+    command: ":q!",
+    description: "press <Esc> key before, if you are in insert mode",
+    keywords: "escape exit ext quit qut quti qt qti"
   },
   {
     label: "write and quit",
     mode: "normal",
     command: ":x",
-    keywords: "quit qut qti qt qti"
+    description: "press <Esc> key before, if you are in insert mode",
+    keywords: "quit save sve exit ext qut qti qt qti"
   },
   {
     label: "insert mode.",
@@ -28,25 +40,91 @@ export default [
     label: "move left",
     mode: "normal",
     command: "h",
-    keywords: "move left letf mve moe mvoe"
+    keywords: "move cursor crsor left letf mve moe mvoe"
   },
   {
     label: "move right",
     mode: "normal",
     command: "l",
-    keywords: "move riht rgith right mve moe mvoe"
+    keywords: "move cursor crsor riht rgith right mve moe mvoe"
   },
   {
     label: "move up",
     mode: "normal",
     command: "k",
-    keywords: "move up mve moe mvoe"
+    keywords: "move up mve moe mvoe cursor cursr crsor"
   },
   {
     label: "move down",
     mode: "normal",
     command: "j",
-    keywords: "move down dwn mve moe mvoe"
+    keywords: "move down dwn mve moe mvoe cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the end of the word",
+    mode: "normal",
+    command: "e",
+    keywords: "move mve moe mvoe cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the begining of the word",
+    mode: "normal",
+    command: "b",
+    keywords: "move mve moe mvoe begining cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the begining of the line",
+    mode: "normal",
+    command: "O",
+    keywords: "move mve moe mvoe begining line cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the end of the line",
+    mode: "normal",
+    command: "G",
+    keywords: "move mve moe mvoe end line cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the begining of the file",
+    mode: "normal",
+    command: "gg",
+    keywords: "move mve moe mvoe begining file cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the bottom of the screen",
+    mode: "normal",
+    command: "L",
+    keywords: "move mve moe mvoe bottom cursor cursr crsor"
+  },
+  {
+    label: "move cursor to line 59.",
+    mode: "normal",
+    command: ":59",
+    keywords: "move mve moe mvoe line cursor cursr crsor"
+  },
+  {
+    label: "move cursor to column 20.",
+    mode: "normal",
+    command: "20|",
+    keywords: "move mve moe mvoe column cursor cursr crsor"
+  },
+  {
+    label: "move cursor to matching parenthesis.",
+    mode: "normal",
+    command: "%",
+    keywords: "move mve moe mvoe mathching cursor cursr crsor parenthesis"
+  },
+  {
+    label: "Jump to function start",
+    mode: "normal",
+    command: "[[",
+    keywords: "move mve moe mvoe function start cursor cursr crsor"
+  },
+  {
+    label: "Jump to block start",
+    mode: "normal",
+    command: "[{",
+    keywords: "move mve moe mvoe block start cursor cursr crsor"
   },
   {
     label: "page up",
@@ -213,14 +291,8 @@ export default [
   },
   {
     label: "Search",
-    mode: "insert",
-    command: "<ESC> /myWord",
+    mode: "normal",
+    command: "/myWord",
     keywords: "srch earch search saerch"
-  },
-  {
-    label: "Switch to command mode",
-    mode: "insert",
-    command: "<Esc>",
-    keywords: "switch command mode change mode"
   }
 ];
