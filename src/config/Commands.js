@@ -386,5 +386,11 @@ export default [
     mode: "normal",
     command: "<<",
     keywords: "unindent un-indent"
+  },
+  {
+    label: `execute a unix command - example with "ls"`,
+    mode: "normal",
+    command: ":!ls",
+    keywords: "unix command execute unx commnd excte execte"
   }
 ];
