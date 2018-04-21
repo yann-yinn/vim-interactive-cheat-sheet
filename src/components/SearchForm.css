@@ -6,4 +6,5 @@
 .Search input[type="text"] {
   margin: 10px;
   font-size: 40px;
+  max-width: 300px;
 }

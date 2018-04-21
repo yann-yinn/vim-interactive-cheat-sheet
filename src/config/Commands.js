@@ -6,33 +6,15 @@ export default [
     keywords: "quit qut qti qt qti"
   },
   {
-    label: "quit",
-    mode: "insert",
-    command: "<ESC> :q",
-    keywords: "escape quit qut qti qt qti"
-  },
-  {
     label: "quit without saving",
     mode: "normal",
     command: "q!",
     keywords: "escape quit qut quti qt qti"
   },
   {
-    label: "quit",
-    mode: "insert",
-    command: "<ESC> :q",
-    keywords: "quit qut qti qt qti"
-  },
-  {
     label: "write and quit",
     mode: "normal",
     command: ":x",
-    keywords: "quit qut qti qt qti"
-  },
-  {
-    label: "write and quit",
-    mode: "insert",
-    command: "<ESC> :x",
     keywords: "quit qut qti qt qti"
   },
   {
@@ -162,14 +144,14 @@ export default [
   },
   {
     label: "selecting text (characters)",
-    mode: "normal",
+    mode: "visual",
     description: "start Visual mode per character.",
     command: "v",
     keywords: "slecting selecting selct"
   },
   {
     label: "selecting text (lines)",
-    mode: "normal",
+    mode: "visual",
     description: "start Visual mode per line.",
     command: "V",
     keywords: "slecting selecting selct"
@@ -178,9 +160,9 @@ export default [
     label: "replace character",
     mode: "normal",
     description:
-      "Enter Insert mode, replacing characters rather than inserting",
+      "Enter insert mode, replacing characters rather than inserting",
     command: "R",
-    keywords: "replace rplace replce"
+    keywords: "replace rplace replce insert insrt"
   },
   {
     label: "search and replace",

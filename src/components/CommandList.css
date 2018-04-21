@@ -1,10 +1,9 @@
 .CommandList table {
-  max-width: 800px;
-  min-width: 800px;
   margin: auto;
   text-align: left;
   font-size: 30px;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .CommandList .command {
@@ -17,7 +16,7 @@
 }
 
 .CommandList table tr td {
-  border-bottom: solid silver 1px;  
+  border-bottom: solid silver 1px;
 }
 
 .CommandList .description {
