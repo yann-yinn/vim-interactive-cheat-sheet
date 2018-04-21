@@ -22,7 +22,7 @@ export default [
     keywords: "quit save sve exit ext qut qti qt qti"
   },
   {
-    label: "insert mode.",
+    label: "insert mode",
     description: "insert mode. Next keys typed are inserted into the file.",
     mode: "normal",
     command: "i",
@@ -128,13 +128,19 @@ export default [
     label: "delete the current line",
     mode: "normal",
     command: "dd",
-    keywords: "delete line current"
+    keywords: "delete cut line current"
   },
   {
     label: "copy the current line",
     mode: "normal",
     command: "yy",
     keywords: "copy current line copu cpy"
+  },
+  {
+    label: "Copy the selected text to clipboard",
+    mode: "normal",
+    command: "y",
+    keywords: "copy copu cpy"
   },
   {
     label: "paste",
@@ -158,12 +164,12 @@ export default [
     label: "Append text following current cursor position",
     mode: "normal",
     command: "a",
-    keywords: "write writing writ wrt edit editing edt"
+    keywords: "write insert append writing writ wrt edit editing edt"
   },
   {
     label: "Append text to the end of current line",
     mode: "normal",
-    keywords: "write writing writ wrt edit editing edt",
+    keywords: "write insert append writing writ wrt edit editing edt",
     command: "A"
   },
   {
@@ -187,6 +193,12 @@ export default [
     keywords: "Insert new line below nw lne inster insert below"
   },
   {
+    label: "Insert at new line above",
+    mode: "normal",
+    command: "O",
+    keywords: "Insert new line above nw lne inster insert above"
+  },
+  {
     label: "Undo",
     mode: "normal",
     command: "u",
@@ -203,14 +215,14 @@ export default [
     mode: "normal",
     description: "Delete [count] characters under and after the cursor",
     command: "x",
-    keywords: "delete delte"
+    keywords: "delete cut delte"
   },
   {
     label: "delete character",
     mode: "normal",
     description: "Delete [count] characters before the cursor",
     command: "X",
-    keywords: "dkte delete delte"
+    keywords: "dkte delete cut delte"
   },
   {
     label: "selecting text (characters)",
@@ -235,14 +247,19 @@ export default [
     keywords: "replace rplace replce insert insrt"
   },
   {
-    label: "search and replace",
+    label: "search and replace in the whole file",
     mode: "normal",
-    description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/g",
     keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
-    label: "search and replace (with confirmation)",
+    label: "search and replace in the current line",
+    mode: "normal",
+    command: ":s/old/new/g",
+    keywords: "search replace reaplce serch sarch sreach rplace"
+  },
+  {
+    label: "search and replace in the whole file (with confirmation)",
     mode: "normal",
     description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gw",
@@ -254,6 +271,30 @@ export default [
     description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gi",
     keywords: "search replace reaplce serch sarch sreach rplace"
+  },
+  {
+    label: "Uppercase character",
+    mode: "normal",
+    command: "vU",
+    keywords: "uppercase upprcase upercase"
+  },
+  {
+    label: "Uppercase line",
+    mode: "normal",
+    command: "VU",
+    keywords: "uppercase upprcase upercase line"
+  },
+  {
+    label: "Lowercase character",
+    mode: "normal",
+    command: "vu",
+    keywords: "lower lowercase lowrecase lowrcase"
+  },
+  {
+    label: "Lowercase line",
+    mode: "normal",
+    command: "Vu",
+    keywords: "lower lowercase lowrecase lowrcase"
   },
   {
     label: "indentation",
@@ -286,5 +327,17 @@ export default [
     mode: "normal",
     command: "/myWord",
     keywords: "srch earch search saerch"
+  },
+  {
+    label: "Open file explorer (spleen screen horizontally)",
+    mode: "normal",
+    command: ":Sex",
+    keywords: "file explorer browser explrer brower browsr"
+  },
+  {
+    label: "Open file explorer (spleen screen vertically)",
+    mode: "normal",
+    command: ":Vex",
+    keywords: "file explorer browser explrer brower browsr"
   }
 ];

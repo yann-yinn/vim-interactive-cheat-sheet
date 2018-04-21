@@ -30,7 +30,7 @@ export default class CommandList extends React.Component {
                   <tr key={index}>
                     <td>{command.label}</td>
                     <td className="command">{command.command}</td>
-                    <td className="description">{command.description}</td>
+                    {/*<td className="description">{command.description}</td>*/}
                   </tr>
                 );
               })}
