@@ -392,5 +392,11 @@ export default [
     mode: "normal",
     command: ":!ls",
     keywords: "unix command execute unx commnd excte execte"
+  },
+  {
+    label: "Change colorscheme to blue theme. Use tab to browse colorschemes.",
+    mode: "normal",
+    command: ":colo blue",
+    keywords: "colorscheme color clor theme syntax"
   }
 ];
