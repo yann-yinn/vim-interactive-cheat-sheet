@@ -15,7 +15,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.vcode
+.vscode
 *.swp
 
 npm-debug.log*

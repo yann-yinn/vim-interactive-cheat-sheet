@@ -8,12 +8,13 @@ export default class CommandList extends React.Component {
   };
   render() {
     const { commands } = this.props;
-    let results = commands.filter(
-      command => {
-        console.log(command.command)
-        return command.keywords.indexOf(this.props.searched) !== -1
-      }
-    );
+    let results = commands.filter(command => {
+      return (
+        command.keywords
+          .toLowerCase()
+          .indexOf(this.props.searched.toLowerCase()) !== -1
+      );
+    });
     if (results.length === 0) {
       return (
         <div
