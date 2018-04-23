@@ -3,13 +3,17 @@
   text-align: left;
   border-collapse: collapse;
   width: 100%;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .CommandList .command {
-  white-space: nowrap;
+  width: 70%;
+}
+
+.CommandList .command {
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
+  width: 30%;
 }
 
 .CommandList table tr td {

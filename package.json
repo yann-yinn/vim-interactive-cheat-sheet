@@ -14,5 +14,10 @@
     "deploy": "yarn build && now build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+	"prettier": {
+		"single-quote": false,
+		"semi": true,
+		"trailing_comma": "none"
+	}
 }
