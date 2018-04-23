@@ -16,8 +16,17 @@
     "eject": "react-scripts eject"
   },
 	"prettier": {
-		"single-quote": false,
+		"print_width": "80",
+		"tab_width": "2",
+		"use_tabs": false,
 		"semi": true,
-		"trailing_comma": "none"
+		"single-quote": false,
+		"bracket_spacing": true,
+		"jsx_bracket_same_line": false,
+		"arrow_parens": "avoid",
+		"trailing_comma": "none",
+		"parser": "babylon",
+		"config_precedence": "prefer-file",
+		"prose_wrap": "preserve"
 	}
 }
