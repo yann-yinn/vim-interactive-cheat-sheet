@@ -429,5 +429,10 @@ export default [
     label: "Jump to the beginning of the line (first non-blank character)",
     command: "^",
     keywords: "go to start beginning line jump"
+  },
+  {
+    label: "enable mouse support",
+    command: ":set mouse=a",
+    keywords: "mouse mose muse enable"
   }
 ];
