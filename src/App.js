@@ -15,7 +15,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ForkMe url={"https://github.com/nyl-auster/vim-command"} />
+        <ForkMe
+          url={"https://github.com/nyl-auster/vim-interactive-cheat-sheet"}
+        />
         <Header />
         <Container>
           <div style={{ textAlign: "center" }}>

@@ -18,6 +18,10 @@ const Footer = () => {
               https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
             </a>
           </li>
+          <li>
+            {" "}
+            <a href="https://vim.rtorr.com/">https://vim.rtorr.com/</a>
+          </li>
         </ul>
       </p>
     </footer>

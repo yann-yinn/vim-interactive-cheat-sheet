@@ -2,3 +2,7 @@
   text-align: center;
   margin-top: 40px;
 }
+
+.Footer ul {
+  list-style-type: none;
+}
