@@ -385,5 +385,10 @@ export default [
     label: "change window in a splitted screen",
     command: "<Ctrl> + w w",
     keywords: "screen window split splut splt horizontally"
+  },
+  {
+    label: "Reload .vimrc without restart vim",
+    command: ":so $MYVIMRC",
+    keywords: "reload re-load vimrc"
   }
 ];
