@@ -5,7 +5,8 @@ This project was bootstrapped with Create React App.
 ## install
 
 ```
-cd vim-commands
+git clone git@github.com:nyl-auster/vim-interactive-cheat-sheet.git
+cd vim-interactive-cheat-sheet
 yarn install
 yarn start
 ```
