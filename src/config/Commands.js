@@ -348,7 +348,7 @@ export default [
     keywords: "lower lowercase lowrecase lowrcase"
   },
   {
-    label: "indentation",
+    label: "Indent whole file",
     mode: "normal",
     command: "gg=G",
     keywords: "autoindent auto-index autoindentation reindent re-indent"
