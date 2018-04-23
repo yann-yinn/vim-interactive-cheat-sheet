@@ -387,7 +387,7 @@ export default [
     keywords: "screen window split splut splt horizontally"
   },
   {
-    label: "Reload .vimrc without restart vim",
+    label: "Reload .vimrc without restarting vim",
     command: ":so $MYVIMRC",
     keywords: "reload re-load vimrc"
   }
