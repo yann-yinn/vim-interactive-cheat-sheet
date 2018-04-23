@@ -219,7 +219,7 @@ export default [
   {
     label: "Undo all changes on current line",
     command: "U",
-    kfezfrzgeywords: "undo udo ndo udno ctrl-z ctrl z"
+    keywords: "undo udo ndo udno ctrl-z ctrl z"
   },
   {
     label: "Redo",
