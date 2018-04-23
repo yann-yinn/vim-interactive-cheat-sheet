@@ -264,27 +264,27 @@ export default [
   {
     label: "search and replace in the whole file",
     command: ":%s/old/new/g",
-    keywords: "search replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace reaplce serch sarch sreach rplace"
   },
   {
     label: "next occurence of the current word",
     command: "*",
-    keywords: "search next occurence"
+    keywords: "search find next occurence"
   },
   {
     label: "search and replace in the current line",
     command: ":s/old/new/g",
-    keywords: "search replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace in the whole file (with confirmation)",
     command: ":%s/old/new/gw",
-    keywords: "search replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace (case insensitive)",
     command: ":%s/old/new/gi",
-    keywords: "search replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace reaplce serch sarch sreach rplace"
   },
   {
     label: "Uppercase character",
@@ -324,27 +324,28 @@ export default [
   {
     label: "search (top to bottom)",
     command: "/myWord",
-    keywords: "/ srch earch search saerch"
+    keywords: "/ srch find search saerch"
   },
   {
-		label: "search result : next occurence in same direction",
+    label: "search result : next occurence in same direction",
     command: "n",
-    keywords: "/ srch earch search saerch next result"
+    keywords: "/ srch find search saerch next result"
   },
   {
-		label: "search result : next occurence in opposite direction",
+    label: "search result : next occurence in opposite direction",
     command: "N",
-    keywords: "/ srch earch search saerch next result reverse opposite backwards"
+    keywords:
+      "/ srch earch find search saerch next result reverse opposite backwards"
   },
   {
     label: "search (bottom to top)",
     command: "?myWord",
-    keywords: "/ srch earch search saerch"
+    keywords: "/ srch find search saerch"
   },
   {
     label: "search",
     command: "/myWord",
-    keywords: "srch earch search saerch"
+    keywords: "srch earch find search saerch"
   },
   {
     label: "open vim with directory listing",
@@ -360,12 +361,14 @@ export default [
   {
     label: "open file explorer (spleen screen horizontally)",
     command: ":Sex",
-    keywords: "file explorer directory listing browser explrer brower browsr"
+    keywords:
+      "file open explorer directory listing browser explrer brower browsr"
   },
   {
     label: "open file explorer (spleen screen vertically)",
     command: ":Vex",
-    keywords: "file explorer directory listing browser explrer brower browsr"
+    keywords:
+      "file open explorer directory listing browser explrer brower browsr"
   },
   {
     label: "open new tab",
