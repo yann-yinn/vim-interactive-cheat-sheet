@@ -9,6 +9,17 @@ const Footer = () => {
         💛
       </span>{" "}
       by <a href="https://yineo.fr">Yineo</a>
+      <p>
+        Inspiration :{" "}
+        <ul>
+          <li>
+            {" "}
+            <a href="https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016">
+              https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
+            </a>
+          </li>
+        </ul>
+      </p>
     </footer>
   );
 };

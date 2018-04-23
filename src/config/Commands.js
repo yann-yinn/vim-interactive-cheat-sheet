@@ -22,29 +22,37 @@ export default [
     keywords: "quit save sve exit ext qut qti qt qti"
   },
   {
+    label: "write / save",
+    mode: "normal",
+    command: ":w",
+    keywords: "save write saving sve",
+    memo: "*w*rite"
+  },
+  {
     label: "insert mode",
     description: "insert mode. Next keys typed are inserted into the file.",
     mode: "normal",
     command: "i",
-    keywords: "insert write edit insrt"
+    keywords: "insert write edit insrt",
+    memo: "*i*nsert"
   },
   {
     label: "⬅️ move left",
     mode: "normal",
     command: "h",
-    keywords: "move cursor crsor left letf mve moe mvoe"
+    keywords: "move go to cursor crsor left letf mve moe mvoe"
   },
   {
     label: "➡️ move right",
     mode: "normal",
     command: "l",
-    keywords: "move cursor crsor riht rgith right mve moe mvoe"
+    keywords: "move go to cursor crsor riht rgith right mve moe mvoe"
   },
   {
     label: "⬆️ move up",
     mode: "normal",
     command: "k",
-    keywords: "move up mve moe mvoe cursor cursr crsor"
+    keywords: "move go to up mve moe mvoe cursor cursr crsor"
   },
   {
     label: "⬇️ move down",
@@ -56,73 +64,91 @@ export default [
     label: "move the cursor to the end of the word",
     mode: "normal",
     command: "e",
-    keywords: "move mve moe mvoe cursor cursr crsor"
+    keywords: "move go to mve moe mvoe cursor cursr word crsor",
+    memo: "*e*nd of the word"
   },
   {
     label: "move the cursor to the begining of the word",
     mode: "normal",
     command: "b",
-    keywords: "move mve moe mvoe begining cursor cursr crsor"
+    keywords: "move go to mve moe mvoe begining cursor word cursr crsor",
+    memo: "*b*eginning of the word"
   },
   {
-    label: "move the cursor to the begining of the line",
+    label: "move the cursor to the beginning of the next word",
     mode: "normal",
-    command: "O",
-    keywords: "move mve moe mvoe begining line cursor cursr crsor"
-  },
-  {
-    label: "move the cursor to the end of the line",
-    mode: "normal",
-    command: "G",
-    keywords: "move mve moe mvoe end line cursor cursr crsor"
+    command: "w",
+    keywords: "move go to word mve moe mvoe cursor cursr crsor",
+    memo: "next *w*ord"
   },
   {
     label: "move the cursor to the begining of the file",
     mode: "normal",
     command: "gg",
-    keywords: "move mve moe mvoe begining file cursor cursr crsor"
+    keywords: "move go to mve moe mvoe begining file cursor cursr crsor"
+  },
+  {
+    label: "move the cursor to the end of the file",
+    mode: "normal",
+    command: "G",
+    keywords: "move go to mve moe mvoe end file cursor cursr crsor"
   },
   {
     label: "move the cursor to the bottom of the screen",
     mode: "normal",
     command: "L",
-    keywords: "move mve moe mvoe bottom cursor cursr crsor"
+    keywords: "move go to mve moe mvoe bottom cursor cursr crsor"
   },
   {
     label: "move cursor to line 59.",
     mode: "normal",
     command: ":59",
-    keywords: "move mve moe mvoe line cursor cursr crsor"
+    keywords: "move go to mve moe mvoe line cursor cursr crsor"
   },
   {
     label: "move cursor to column 20.",
     mode: "normal",
     command: "20|",
-    keywords: "move mve moe mvoe column cursor cursr crsor"
+    keywords: "move go to mve moe mvoe column cursor cursr crsor"
   },
   {
     label: "move cursor to matching parenthesis.",
     mode: "normal",
     command: "%",
-    keywords: "move mve moe mvoe mathching cursor cursr crsor parenthesis"
+    keywords: "move go to mve moe mvoe mathching cursor cursr crsor parenthesis"
   },
   {
     label: "Jump to function start",
     mode: "normal",
     command: "[[",
-    keywords: "move mve moe mvoe function start cursor cursr crsor"
+    keywords: "move go to mve moe mvoe function start cursor cursr crsor"
   },
   {
     label: "Jump to block start",
     mode: "normal",
     command: "[{",
-    keywords: "move mve moe mvoe block start cursor cursr crsor"
+    keywords: "move go to mve moe mvoe block start cursor cursr crsor"
   },
   {
     label: "page up",
     mode: "normal",
     command: "<Ctrl> + u",
-    keywords: "page up pge up"
+    keywords: "page up pge up",
+    memo: "*u*p"
+  },
+  {
+    label: "page down",
+    mode: "normal",
+    command: "<Ctrl> + d",
+    keywords: "page down pge down",
+    memo: "*d*own"
+  },
+  {
+    label: "delete current word",
+    mode: "normal",
+    command: "dw",
+    keywords: "delete word",
+    memo: "*d*elete *w*ord"
   },
   {
     label: "delete the current line",
@@ -134,50 +160,58 @@ export default [
     label: "copy the current line",
     mode: "normal",
     command: "yy",
-    keywords: "copy current line copu cpy"
+    keywords: "copy current line copu cpy",
+    memo: "*y*ank"
   },
   {
     label: "Copy the selected text to clipboard",
     mode: "normal",
     command: "y",
-    keywords: "copy copu cpy"
+    keywords: "copy copu cpy",
+    memo: "*y*ank"
   },
   {
     label: "paste",
     mode: "normal",
     command: "p",
-    keywords: "paste pste psate"
-  },
-  {
-    label: "page down",
-    mode: "normal",
-    command: "<Ctrl> + d",
-    keywords: "page down pge down"
-  },
-  {
-    label: "save",
-    mode: "normal",
-    command: ":w",
-    keywords: "save saving sve"
+    keywords: "paste pste psate",
+    memo: "*p*aste"
   },
   {
     label: "Append text following current cursor position",
     mode: "normal",
     command: "a",
-    keywords: "write insert append writing writ wrt edit editing edt"
+    keywords: "write insert append writing writ wrt edit editing edt",
+    memo: "*a*ppend"
   },
   {
     label: "Append text to the end of current line",
     mode: "normal",
     keywords: "write insert append writing writ wrt edit editing edt",
-    command: "A"
+    command: "A",
+    memo: "*A*ppend"
   },
   {
-    label: "append text",
-    description: "Insert text before the current cursor position",
+    label: "delete and insert inside {. Works with any character",
     mode: "normal",
-    keywords: "write writing writ wrt edit editing edt",
-    command: "A"
+    command: "ci{",
+    memo: "*c*hange *i*nside",
+    keywords: "delete dlete delte inster insert"
+  },
+  {
+    label: 'delete inside "{". Works with any character',
+    mode: "normal",
+    command: "di{",
+    memo: "*d*elete *i*nside",
+    help: 'replace "{" by any character ',
+    keywords: "delete dlete delte inster insert"
+  },
+  {
+    label: 'go to character "{". Works with any character',
+    mode: "normal",
+    command: "f{",
+    help: 'replace "{" by any character ☺️ ',
+    keywords: "move go to character chracter mve"
   },
   {
     label: "turn on syntax highlighting",
@@ -222,35 +256,41 @@ export default [
     keywords: "redo"
   },
   {
-    label: "delete character",
+    label: "cut current character",
     mode: "normal",
-    description: "Delete [count] characters under and after the cursor",
     command: "x",
-    keywords: "delete cut delte"
+    keywords: "delete cut delte",
+    memo: "*d*elete"
   },
   {
-    label: "delete character",
+    label: "cut previous character",
     mode: "normal",
-    description: "Delete [count] characters before the cursor",
     command: "X",
     keywords: "dkte delete cut delte"
+  },
+  {
+    label: "cut 3 characters. Works with any numbers",
+    mode: "normal",
+    command: "3x",
+    keywords: "delete cut delte",
+    memo: "*d*elete"
   },
   {
     label: "selecting text (characters)",
     mode: "visual",
     description: "start Visual mode per character.",
     command: "v",
-    keywords: "slecting selecting selct"
+    keywords: "visual selection slecting selecting selct"
   },
   {
-    label: "selecting text (lines)",
+    label: "selecting text (whole lines)",
     mode: "visual",
     description: "start Visual mode per line.",
     command: "V",
     keywords: "slecting selecting selct"
   },
   {
-    label: "replace character",
+    label: "replace characters",
     mode: "normal",
     description:
       "Enter insert mode, replacing characters rather than inserting",
@@ -346,16 +386,29 @@ export default [
     keywords: "srch earch search saerch"
   },
   {
+    label: "open vim with directory listing",
+    mode: "normal",
+    command: "vi .",
+    keywords:
+      "open file explorer dirctory directory listing browser explrer brower browsr"
+  },
+  {
+    label: "open file index.js with vim, directly at line 86",
+    mode: "normal",
+    command: "vi index.js +86",
+    keywords: "open file line"
+  },
+  {
     label: "open file explorer (spleen screen horizontally)",
     mode: "normal",
     command: ":Sex",
-    keywords: "file explorer browser explrer brower browsr"
+    keywords: "file explorer directory listing browser explrer brower browsr"
   },
   {
     label: "open file explorer (spleen screen vertically)",
     mode: "normal",
     command: ":Vex",
-    keywords: "file explorer browser explrer brower browsr"
+    keywords: "file explorer directory listing browser explrer brower browsr"
   },
   {
     label: "open new tab",
@@ -398,5 +451,23 @@ export default [
     mode: "normal",
     command: ":colo blue",
     keywords: "colorscheme color clor theme syntax"
+  },
+  {
+    label: "Split screen horizontally",
+    mode: "normal",
+    command: ":split",
+    keywords: "screen splut splt horizontally"
+  },
+  {
+    label: "Split screen vertically",
+    mode: "normal",
+    command: ":vsplit",
+    keywords: "screen splut splt horizontally"
+  },
+  {
+    label: "change window in a splitted screen",
+    mode: "normal",
+    command: "<Ctrl> + w w",
+    keywords: "screen splut splt horizontally"
   }
 ];
