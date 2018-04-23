@@ -1,4 +1,5 @@
 // thanks https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
+// https://vim.rtorr.com/
 export default [
   {
     label: "quit",
@@ -178,7 +179,12 @@ export default [
   {
     label: 'go to character "{". Works with any character',
     command: "f{",
-    keywords: "move go to character chracter mve"
+    keywords: "move go jump to character chracter mve"
+  },
+  {
+    label: 'go to previous occurence of "{". Works with any character',
+    command: "F{",
+    keywords: "go move jump previous occurence find character"
   },
   {
     label: "turn on syntax highlighting",
@@ -251,6 +257,11 @@ export default [
     keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
+    label: "next occurence of the current word",
+    command: "*",
+    keywords: "search next occurence"
+  },
+  {
     label: "search and replace in the current line",
     command: ":s/old/new/g",
     keywords: "search replace reaplce serch sarch sreach rplace"
@@ -304,6 +315,16 @@ export default [
     label: "search (top to bottom)",
     command: "/myWord",
     keywords: "/ srch earch search saerch"
+  },
+  {
+		label: "search result : next occurence in same direction",
+    command: "n",
+    keywords: "/ srch earch search saerch next result"
+  },
+  {
+		label: "search result : next occurence in opposite direction",
+    command: "N",
+    keywords: "/ srch earch search saerch next result reverse opposite backwards"
   },
   {
     label: "search (bottom to top)",
@@ -390,5 +411,10 @@ export default [
     label: "Reload .vimrc without restarting vim",
     command: ":so $MYVIMRC",
     keywords: "reload re-load vimrc"
+  },
+  {
+    label: "Jump to the beginning of the line (first non-blank character)",
+    command: "^",
+    keywords: "go to start beginning line jump"
   }
 ];
