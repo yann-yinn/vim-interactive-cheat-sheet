@@ -12,4 +12,5 @@ yarn start
 
 ## contribute
 
-All the commands are located in src/config/Commands.js file.
+Install Prettier formatter.
+All the commands are located in src/config/Commands.js file, just edit it and do a PR 🦄 

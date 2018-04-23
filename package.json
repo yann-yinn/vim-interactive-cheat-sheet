@@ -14,19 +14,6 @@
     "deploy": "yarn build && now build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-	"prettier": {
-		"print_width": "80",
-		"tab_width": "2",
-		"use_tabs": false,
-		"semi": true,
-		"single-quote": false,
-		"bracket_spacing": true,
-		"jsx_bracket_same_line": false,
-		"arrow_parens": "avoid",
-		"trailing_comma": "none",
-		"parser": "babylon",
-		"config_precedence": "prefer-file",
-		"prose_wrap": "preserve"
-	}
+  }
 }
+
