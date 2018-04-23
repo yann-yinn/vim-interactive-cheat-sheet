@@ -254,7 +254,12 @@ export default [
   {
     label: "replace characters",
     command: "R",
-    keywords: "replace rplace replce insert insrt"
+    keywords: "replace write rplace replce insert insrt"
+  },
+  {
+    label: "replace a single character",
+    command: "r",
+    keywords: "replace write rplace replce insert insrt"
   },
   {
     label: "search and replace in the whole file",
