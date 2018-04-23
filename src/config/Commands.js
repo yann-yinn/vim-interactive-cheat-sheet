@@ -444,13 +444,13 @@ export default [
     label: "Split screen horizontally",
     mode: "normal",
     command: ":split",
-    keywords: "screen splut splt horizontally"
+    keywords: "split screen splut splt horizontally"
   },
   {
     label: "Split screen vertically",
     mode: "normal",
     command: ":vsplit",
-    keywords: "screen splut splt horizontally"
+    keywords: "split screen splut splt horizontally"
   },
   {
     label: "change window in a splitted screen",
