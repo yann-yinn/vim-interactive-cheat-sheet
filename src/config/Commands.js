@@ -4,21 +4,18 @@ export default [
     label: "quit",
     mode: "normal",
     command: ":q",
-    description: "press <Esc> key before, if you are in insert mode",
     keywords: "quit qut qti qt qti"
   },
   {
     label: "quit without saving",
     mode: "normal",
     command: ":q!",
-    description: "press <Esc> key before, if you are in insert mode",
     keywords: "escape exit ext quit qut quti qt qti"
   },
   {
     label: "write and quit",
     mode: "normal",
     command: ":x",
-    description: "press <Esc> key before, if you are in insert mode",
     keywords: "quit save sve exit ext qut qti qt qti"
   },
   {
@@ -30,7 +27,6 @@ export default [
   },
   {
     label: "insert mode",
-    description: "insert mode. Next keys typed are inserted into the file.",
     mode: "normal",
     command: "i",
     keywords: "insert write edit insrt",
@@ -278,22 +274,18 @@ export default [
   {
     label: "selecting text (characters)",
     mode: "visual",
-    description: "start Visual mode per character.",
     command: "v",
     keywords: "visual selection slecting selecting selct"
   },
   {
     label: "selecting text (whole lines)",
     mode: "visual",
-    description: "start Visual mode per line.",
     command: "V",
     keywords: "slecting selecting selct"
   },
   {
     label: "replace characters",
     mode: "normal",
-    description:
-      "Enter insert mode, replacing characters rather than inserting",
     command: "R",
     keywords: "replace rplace replce insert insrt"
   },
@@ -312,14 +304,12 @@ export default [
   {
     label: "search and replace in the whole file (with confirmation)",
     mode: "normal",
-    description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gw",
     keywords: "search replace reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace (case insensitive)",
     mode: "normal",
-    description: "Replace all occurences of old by new in file",
     command: ":%s/old/new/gi",
     keywords: "search replace reaplce serch sarch sreach rplace"
   },
@@ -369,14 +359,12 @@ export default [
     label: "search (top to bottom)",
     mode: "normal",
     command: "/myWord",
-    description: "search word from top to bottom",
     keywords: "/ srch earch search saerch"
   },
   {
     label: "search (bottom to top)",
     mode: "normal",
     command: "?myWord",
-    description: "search word from bottom to top",
     keywords: "/ srch earch search saerch"
   },
   {
