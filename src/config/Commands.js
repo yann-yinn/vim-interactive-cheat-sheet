@@ -359,13 +359,13 @@ export default [
     keywords: "open file line"
   },
   {
-    label: "open file explorer (spleen screen horizontally)",
+    label: "open file explorer (split screen horizontally)",
     command: ":Sex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
   },
   {
-    label: "open file explorer (spleen screen vertically)",
+    label: "open file explorer (split screen vertically)",
     command: ":Vex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
