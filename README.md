@@ -14,4 +14,7 @@ yarn start
 ## contribute
 
 Install Prettier formatter.
-All the commands are located in src/config/Commands.js file, just edit it and do a PR 🦄 
+
+All the commands are located in src/config/Commands.js file, just edit it and do a PR 🦄
+
+Need vim configuration for React ? check https://github.com/nyl-auster/react-vim
