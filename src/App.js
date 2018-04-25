@@ -4,7 +4,7 @@ import Container from "./components/Container";
 import CommandList from "./components/CommandList";
 import Header from "./components/Header";
 import ForkMe from "./components/ForkMe";
-import commands from "./config/Commands";
+import commands from "./commands";
 import Footer from "./components/Footer";
 import "./App.css";
 

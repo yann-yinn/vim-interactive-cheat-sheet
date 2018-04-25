@@ -459,5 +459,30 @@ export default [
     label: "enable mouse support",
     command: ":set mouse=a",
     keywords: "mouse mose muse enable"
+  },
+  {
+    label: 'set a mark : type "m" followed by a letter',
+    command: "ma",
+    keywords: "marks bookmark"
+  },
+  {
+    label: 'jump to mark "a"',
+    command: "'a",
+    keywords: "marks bookmark"
+  },
+  {
+    label: "list all marks",
+    command: ":marks",
+    keywords: "list marks bookmark"
+  },
+  {
+    label: "delete all marks",
+    command: ":delmarks!",
+    keywords: "delete marks bookmark"
+  },
+  {
+    label: 'delete mark "a"',
+    command: ":delmarks a",
+    keywords: "delete marks bookmark"
   }
 ];
