@@ -159,12 +159,12 @@ export default [
   {
     label: "copy the current line",
     command: "yy",
-    keywords: "copy current line copu cpy"
+    keywords: "copy paste pste current line copu cpy"
   },
   {
     label: "Copy the selected text to clipboard",
     command: "y",
-    keywords: "copy copu cpy past pste"
+    keywords: "copy paste pste copu cpy past pste"
   },
   {
     label: "paste",
