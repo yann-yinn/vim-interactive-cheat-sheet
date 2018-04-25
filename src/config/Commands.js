@@ -4,12 +4,17 @@ export default [
   {
     label: "quit",
     command: ":q",
-    keywords: "quit qut qti qt qti"
+    keywords: "quit qut qti qt qti close clse"
   },
   {
-    label: "quit without saving",
+    label: "quit closing all files",
+    command: ":qa",
+    keywords: "quit qut qti qt qti close clse"
+  },
+  {
+    label: "quit without saving changes",
     command: ":q!",
-    keywords: "escape exit ext quit qut quti qt qti"
+    keywords: "escape exit ext close quit qut quti qt qti"
   },
   {
     label: "write and quit",
@@ -132,14 +137,24 @@ export default [
     keywords: "page down pge down"
   },
   {
-    label: "delete current word",
-    command: "dw",
-    keywords: "delete word"
+    label: "delete character",
+    command: "d",
+    keywords: "delete cut character dlete"
   },
   {
-    label: "delete the current line",
+    label: "delete current word",
+    command: "dw",
+    keywords: "delete cut word"
+  },
+  {
+    label: "delete current line",
     command: "dd",
     keywords: "delete cut line current"
+  },
+  {
+    label: "delete inside { (works with any character)",
+    command: "di{",
+    keywords: "delete code inside {"
   },
   {
     label: "copy the current line",
@@ -149,7 +164,7 @@ export default [
   {
     label: "Copy the selected text to clipboard",
     command: "y",
-    keywords: "copy copu cpy"
+    keywords: "copy copu cpy past pste"
   },
   {
     label: "paste",
@@ -242,14 +257,24 @@ export default [
     keywords: "delete cut delte"
   },
   {
-    label: "selecting text (characters)",
+    label: "select text (characters)",
     command: "v",
     keywords: "visual selection slecting selecting selct"
   },
   {
-    label: "selecting text (whole lines)",
+    label: "select text (whole lines)",
     command: "V",
-    keywords: "slecting selecting selct"
+    keywords: "slecting selecting selct visual line"
+  },
+  {
+    label: "select text (block)",
+    command: "<Ctrl> + V",
+    keywords: "slecting selecting visual block selct"
+  },
+  {
+    label: "replace selection",
+    command: "s",
+    keywords: "visual selection slecting selecting selct"
   },
   {
     label: "replace characters",
