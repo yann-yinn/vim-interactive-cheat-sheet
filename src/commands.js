@@ -484,5 +484,10 @@ export default [
     label: 'delete mark "a"',
     command: ":delmarks a",
     keywords: "delete marks bookmark"
+  },
+  {
+    label: "repeat last change in normal mode",
+    command: ".",
+    keywords: "reapet change last repeat"
   }
 ];
