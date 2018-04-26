@@ -64,67 +64,75 @@ export default [
   {
     label: "move the cursor to the end of the word",
     command: "e",
-    keywords: "move go to mve moe mvoe cursor cursr word crsor"
+    keywords: "move jump go to mve moe mvoe cursor cursr word crsor"
   },
   {
     label: "move the cursor to the begining of the word",
     command: "b",
-    keywords: "move go to mve moe mvoe begining cursor word cursr crsor"
+    keywords: "move go jump to mve moe mvoe begining cursor word cursr crsor"
   },
   {
     label: "move cursor to the beginning of the next word",
     command: "w",
-    keywords: "move go to word mve moe mvoe cursor cursr crsor"
+    keywords: "move jump go to word mve moe mvoe cursor cursr crsor"
   },
   {
     label: "move cursor to the begining of the file",
     command: "gg",
-    keywords: "move go to mve moe mvoe begining file cursor cursr crsor"
+    keywords:
+      "move jump first line go to mve moe mvoe begining file cursor cursr crsor"
   },
   {
     label: "move cursor to the end of the file",
-    command: "G",
-    keywords: "move go to mve moe mvoe end file cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe end file cursor cursr crsor",
+    keywords:
+      "move jump go to mve last line moe mvoe end file cursor cursr crsor"
   },
   {
     label: "move cursor to bottom of screen",
     command: "L",
-    keywords: "move go to mve moe mvoe screen bottom cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe screen bottom cursor cursr crsor"
   },
   {
     label: "move cursor to top of screen",
     command: "H",
-    keywords: "move go to mve moe mvoe screen top cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe screen top cursor cursr crsor"
   },
   {
     label: "move cursor to middle of screen",
     command: "M",
-    keywords: "move go to mve moe mvoe middle screen cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe middle screen cursor cursr crsor"
   },
   {
     label: "move cursor to line 59.",
     command: ":59",
-    keywords: "move go to mve moe mvoe line cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe line cursor cursr crsor"
   },
   {
     label: "move cursor to column 20.",
     command: "20|",
-    keywords: "move go to mve moe mvoe column cursor cursr crsor"
+    keywords: "move jump go to mve moe mvoe column cursor cursr crsor"
+  },
+  {
+    label: "move cursor to the end of line",
+    command: "$",
+    keywords: "move end line jump go to mve moe mvoe column cursor cursr crsor"
   },
   {
     label: "move cursor to matching parenthesis.",
     command: "%",
-    keywords: "move go to mve moe mvoe mathching cursor cursr crsor parenthesis"
+    keywords:
+      "move jump go to mve moe mvoe mathching cursor cursr crsor parenthesis"
   },
   {
     label: "Jump to function start",
     command: "[[",
-    keywords: "move go to mve moe mvoe function start cursor cursr crsor"
+    keywords: "move go jump to mve moe mvoe function start cursor cursr crsor"
   },
   {
     label: "Jump to block start",
     command: "[{",
-    keywords: "move go to mve moe mvoe block start cursor cursr crsor"
+    keywords: "move go to jump mve moe mvoe block start cursor cursr crsor"
   },
   {
     label: "page up",
@@ -219,12 +227,12 @@ export default [
   {
     label: "Insert at new line below",
     command: "o",
-    keywords: "Insert new line below nw lne inster insert below"
+    keywords: "Insert write new line below nw lne inster insert below"
   },
   {
     label: "Insert at new line above",
     command: "O",
-    keywords: "Insert new line above nw lne inster insert above"
+    keywords: "Insert write new line above nw lne inster insert above"
   },
   {
     label: "Undo",
@@ -275,6 +283,16 @@ export default [
     label: "replace selection",
     command: "s",
     keywords: "visual selection slecting selecting selct"
+  },
+  {
+    label: "Delete line and insert",
+    command: "S",
+    keywords: "delete insert write line"
+  },
+  {
+    label: "Delete until end of line and insert",
+    command: "C",
+    keywords: "delete insert write end line"
   },
   {
     label: "replace characters",
