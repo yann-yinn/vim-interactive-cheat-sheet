@@ -1,6 +1,10 @@
 This project was bootstrapped with Create React App.
 
-# VIM COMMANDS
+# VIM INTERACTIVE CHEAT SHEET
+
+Find your vim commands faster 
+
+![screenshot of vim interactive cheat sheet](https://raw.githubusercontent.com/nyl-auster/vim-interactive-cheat-sheet/master/public/screenshot.png)
 
 ## install
 
