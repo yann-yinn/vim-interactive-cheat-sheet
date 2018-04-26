@@ -1,5 +1,3 @@
-This project was bootstrapped with Create React App.
-
 # VIM INTERACTIVE CHEAT SHEET
 
 Find your vim commands faster 
