@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import SearchForm from "./components/SearchForm";
-import Container from "./components/Container";
-import CommandList from "./components/CommandList";
+import commands from "./commands";
 import Header from "./components/Header";
 import ForkMe from "./components/ForkMe";
-import commands from "./commands";
 import Footer from "./components/Footer";
+import CommandsSearch from "./components/CommandsSearch";
+import Container from "./components/Container";
 import "./App.css";
 
 class App extends Component {
@@ -23,12 +22,7 @@ class App extends Component {
           <div style={{ textAlign: "center" }}>
             <em>search within {commands.length} useful vim commands </em> 🤗
           </div>
-        </Container>
-        <SearchForm
-          onTextChange={value => this.setState({ searched: value })}
-        />
-        <Container>
-          <CommandList commands={commands} searched={this.state.searched} />
+          <CommandsSearch />
         </Container>
         <Footer />
       </div>

@@ -1,4 +1,4 @@
-.CommandList table {
+.CommandsList table {
   margin: auto;
   text-align: left;
   border-collapse: collapse;
@@ -6,24 +6,24 @@
   font-size: 17px;
 }
 
-.CommandList .command {
+.CommandsList .command {
   width: 70%;
 }
 
-.CommandList .command {
+.CommandsList .command {
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   width: 30%;
 }
 
-.CommandList table tr td {
+.CommandsList table tr td {
   padding: 10px;
 }
 
-.CommandList table tr td {
+.CommandsList table tr td {
   border-bottom: solid silver 1px;
 }
 
-.CommandList .description {
+.CommandsList .description {
   font-size: 15px;
 }

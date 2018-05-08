@@ -84,7 +84,7 @@ export default [
   },
   {
     label: "move cursor to the end of the file",
-    keywords: "move jump go to mve moe mvoe end file cursor cursr crsor",
+    command: "G",
     keywords:
       "move jump go to mve last line moe mvoe end file cursor cursr crsor"
   },
