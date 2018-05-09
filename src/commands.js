@@ -1,5 +1,3 @@
-// thanks https://www.catswhocode.com/blog/vim-cheat-sheet-for-2016
-// https://vim.rtorr.com/
 export default [
   {
     label: "quit",
