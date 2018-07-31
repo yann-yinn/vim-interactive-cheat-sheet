@@ -1,6 +1,6 @@
 export default [
   {
-    label: "quit",
+    label: "quit window",
     command: ":q",
     keywords: "quit qut qti qt qti close clse"
   },
@@ -28,11 +28,6 @@ export default [
     label: "insert mode",
     command: "i",
     keywords: "insert write edit insrt"
-  },
-  {
-    label: "open file",
-    command: ":o file",
-    keywords: "open opn file"
   },
   {
     label: "save file as",
@@ -134,23 +129,19 @@ export default [
   },
   {
     label: "page up",
-    command: "<Ctrl> + u",
+    command: "C-u",
     keywords: "page up pge up"
   },
   {
     label: "page down",
-    command: "<Ctrl> + d",
+    command: "C-d",
     keywords: "page down pge down"
   },
   {
-    label: "delete character",
-    command: "d",
-    keywords: "delete cut character dlete"
-  },
-  {
-    label: "delete current word",
+    label:
+      "delete the word from the position cursor is on till the end of the word",
     command: "dw",
-    keywords: "delete cut word"
+    keywords: "delete dlte cut word"
   },
   {
     label: "delete current line",
@@ -188,13 +179,8 @@ export default [
     command: "A"
   },
   {
-    label: "delete and insert inside {. Works with any character",
+    label: "delete and insert inside {",
     command: "ci{",
-    keywords: "delete dlete delte inster insert"
-  },
-  {
-    label: 'delete inside "{". Works with any character',
-    command: "di{",
     keywords: "delete dlete delte inster insert"
   },
   {
@@ -244,13 +230,13 @@ export default [
   },
   {
     label: "Redo",
-    command: "<Ctrl> + r",
+    command: "C-r",
     keywords: "redo"
   },
   {
     label: "cut current character",
     command: "x",
-    keywords: "delete cut delte"
+    keywords: "delete character cut delte"
   },
   {
     label: "cut previous character",
@@ -318,9 +304,10 @@ export default [
     keywords: "search find replace reaplce serch sarch sreach rplace"
   },
   {
-    label: "search and replace in the whole file (with confirmation)",
-    command: ":%s/old/new/gw",
-    keywords: "search find replace reaplce serch sarch sreach rplace"
+    label: "Replace all occurences with confirmation",
+    command: ":%s/old/new/gc",
+    keywords:
+      "search find replace occurences ocurences reaplce serch sarch sreach rplace"
   },
   {
     label: "search and replace (case insensitive)",
@@ -390,7 +377,7 @@ export default [
   },
   {
     label: "open vim with directory listing",
-    command: "vi .",
+    command: "vim .",
     keywords:
       "open file explorer dirctory directory listing browser explrer brower browsr"
   },
@@ -447,12 +434,12 @@ export default [
     keywords: "colorscheme color clor theme syntax"
   },
   {
-    label: "Split screen horizontally",
+    label: "Split window horizontally",
     command: ":split",
     keywords: "split window screen splut splt horizontally"
   },
   {
-    label: "Split screen vertically",
+    label: "Split window vertically",
     command: ":vsplit",
     keywords: "split window screen splut splt horizontally"
   },
