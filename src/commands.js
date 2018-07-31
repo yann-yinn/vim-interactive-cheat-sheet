@@ -260,7 +260,7 @@ export default [
   },
   {
     label: "select text (block)",
-    command: "<Ctrl> + V",
+    command: "C-V",
     keywords: "slecting selecting visual block selct"
   },
   {
@@ -445,7 +445,7 @@ export default [
   },
   {
     label: "change window in a splitted screen",
-    command: "<Ctrl> + w w",
+    command: "C-w w",
     keywords: "screen window split splut splt horizontally"
   },
   {
