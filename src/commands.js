@@ -167,27 +167,27 @@ export default [
     keywords: "yank copy"
   },
   {
-    label: "Put the text [from register x] after the cursor [count] times",
+    label: "Put the text after the cursor",
     command: "p",
     keywords: "Put paste"
   },
   {
-    label: "Append text after the cursor [count] times",
+    label: "Append text after the cursor",
     command: "a",
     keywords: "insert append"
   },
   {
-    label: "Append text at the end of the line [count] times",
+    label: "Append text at the end of the line",
     command: "A",
     keywords: "append insert end line"
   },
   {
-    label: "Go to [count]'th occurence of {char} to the right",
+    label: "Go to next occurence of {char} to the right",
     command: "f{char}",
     keywords: "move go to character right"
   },
   {
-    label: "Go to [count]'th occurence of {char} to the left",
+    label: "Go to next occurence of {char} to the left",
     command: "F{char}",
     keywords: "move go to character left"
   },
@@ -207,19 +207,17 @@ export default [
     keywords: "syntax color language highlighting"
   },
   {
-    label:
-      "Begin a new line below the cursor and insert text, repeat [count] times",
+    label: "Begin a new line below the cursor and insert text.",
     command: "o",
     keywords: "Insert begin new line"
   },
   {
-    label:
-      "Begin a new line above the cursor and insert text, repeat [count] times",
+    label: "Begin a new line above the cursor and insert text",
     command: "O",
     keywords: "Insert begin new line"
   },
   {
-    label: "Undo [count] changes",
+    label: "Undo changes",
     command: "u",
     keywords: "undo un do un-do"
   },
@@ -230,13 +228,12 @@ export default [
     keywords: "undo"
   },
   {
-    label: "Redo [count] changes which were undone",
+    label: "Redo changes which were undone",
     command: "CTRL-r",
     keywords: "redo undo"
   },
   {
-    label:
-      "Delete [count] characters under and after the cursor [into register x]",
+    label: "Delete characters under and after the cursor",
     command: "x",
     keywords: "delete character cut"
   },
@@ -262,14 +259,12 @@ export default [
     keywords: "delete insert and line"
   },
   {
-    label:
-      "Delete [count] characters [into register x] and start insert ( s stands for substitute)",
+    label: "Delete characters and start insert ( s stands for substitute)",
     command: "s",
     keywords: "substitute delete insert"
   },
   {
-    label:
-      "Delete [count] lines [into register x] and start insert (s stands for substitute)",
+    label: "Delete lines and start insert (s stands for substitute)",
     command: "S",
     keywords: "substitute delete insert"
   },
@@ -306,7 +301,7 @@ export default [
   },
   {
     label:
-      "Search forward for the [count]'th occurence of the word nearest to the cursor.",
+      "Search forward for the next occurence of the word nearest to the cursor.",
     command: "*",
     keywords: "search find next occurence forward"
   },
@@ -332,12 +327,12 @@ export default [
     keywords: "line numbers"
   },
   {
-    label: "Search forward for the [count]'th occurence of {pattern}",
+    label: "Search forward for the occurences of {pattern}",
     command: "/{pattern}",
     keywords: "/ ? search find"
   },
   {
-    label: "Search backward for the [count]'th previous occurence of {pattern}",
+    label: "Search backward for the occurences of {pattern}",
     command: "?{patten}",
     keywords: "/ ? search find"
   },
