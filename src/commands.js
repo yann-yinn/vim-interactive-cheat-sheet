@@ -5,6 +5,16 @@ export default [
     keywords: "quit qut qti qt qti close clse window wndow"
   },
   {
+    label: "Write the current file and quit",
+    command: ":wq",
+    keywords: "quit qut qti qt qti close clse window wndow"
+  },
+  {
+    label: 'Like ":wq", but write only when changes have been made',
+    command: ":x",
+    keywords: "quit qut qti qt qti close clse window wndow"
+  },
+  {
     label: "Exit vim, closing all windows.",
     command: ":qa",
     keywords: "quit qut qti qt qti close clse"
@@ -20,14 +30,9 @@ export default [
     keywords: "escape exit ext close quit qut quti qt qti"
   },
   {
-    label: "Write the current file and quit",
-    command: ":x",
-    keywords: "quit save sve exit write wrte ext qut qti qt qti"
-  },
-  {
     label: "Write the current file",
     command: ":w",
-    keywords: "save write saving sve"
+    keywords: "save write saving sve wrte"
   },
   {
     label: "Insert text before the cursor",
@@ -177,7 +182,7 @@ export default [
     command: "A"
   },
   {
-    label: "delete and insert inside {",
+    label: "Delete and insert inside {",
     command: "ci{",
     keywords: "delete dlete delte inster insert"
   },
@@ -202,7 +207,7 @@ export default [
     command: ":syntax off"
   },
   {
-    label: "set syntax highlighting language",
+    label: "Set syntax highlighting language",
     keywords: "syntax color sntax clor highlighting language",
     command: ":set syntax=javascript"
   },
