@@ -122,13 +122,13 @@ export default [
   },
   {
     label: "Scroll by half a page up",
-    command: "C-u",
+    command: "CTRL-u",
     keywords: "scroll up"
   },
   {
     label: "Scroll by half a page down",
-    command: "C-d",
-    keywords: "scrool down"
+    command: "CTRL-d",
+    keywords: "scroll down"
   },
   {
     label: "Delete the chararacters under the cursor until the end of the line",
@@ -257,6 +257,12 @@ export default [
   },
   {
     label:
+      "Delete from the cursor position to the end of the line and start insert.",
+    command: "C",
+    keywords: "delete insert and line"
+  },
+  {
+    label:
       "Delete [count] characters [into register x] and start insert ( s stands for substitute)",
     command: "s",
     keywords: "substitute delete insert"
@@ -266,12 +272,6 @@ export default [
       "Delete [count] lines [into register x] and start insert (s stands for substitute)",
     command: "S",
     keywords: "substitute delete insert"
-  },
-  {
-    label:
-      "Delete from the cursor position to the end of the line and start insert.",
-    command: "C",
-    keywords: "delete insert and line"
   },
   {
     label:
