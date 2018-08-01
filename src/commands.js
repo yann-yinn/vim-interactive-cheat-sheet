@@ -167,7 +167,7 @@ export default [
     keywords: "paste pste psate put"
   },
   {
-    label: "Append text following current cursor position",
+    label: "Append text after the cursor [count] times",
     command: "a",
     keywords: "write insert append writing writ wrt edit editing edt"
   },
