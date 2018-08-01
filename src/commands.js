@@ -10,29 +10,35 @@ export default [
     keywords: "quit qut qti qt qti close clse"
   },
   {
-    label: "quit without saving changes",
+    label: "Exit vim. Any changes are lost.",
+    command: ":qall!",
+    keywords: "quit qut qti qt qti close clse"
+  },
+  {
+    label: "Quit without saving changes",
     command: ":q!",
     keywords: "escape exit ext close quit qut quti qt qti"
   },
   {
-    label: "write and quit",
+    label: "Write the current file and quit",
     command: ":x",
-    keywords: "quit save sve exit ext qut qti qt qti"
+    keywords: "quit save sve exit write wrte ext qut qti qt qti"
   },
   {
-    label: "write / save",
+    label: "Write the current file",
     command: ":w",
     keywords: "save write saving sve"
   },
   {
-    label: "insert mode",
+    label: "Insert text before the cursor",
     command: "i",
     keywords: "insert write edit insrt"
   },
   {
-    label: "save file as",
-    command: ":saveas file",
-    keywords: "save as file"
+    label:
+      "Save the current buffer under the name {file} and the filename of the current buffer to {file}",
+    command: ":saveas {file}",
+    keywords: "save as file buffer filename"
   },
   {
     label: "⬅️ move left",
