@@ -1,6 +1,6 @@
 # VIM INTERACTIVE CHEAT SHEET
 
-Find your vim commands faster 
+Find your Vim commands faster.
 
 ![screenshot of vim interactive cheat sheet](https://raw.githubusercontent.com/nyl-auster/vim-interactive-cheat-sheet/master/public/screenshot.png)
 
