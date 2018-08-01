@@ -152,9 +152,9 @@ export default [
     keywords: "delete inside"
   },
   {
-    label: "Delete and insert inside {",
+    label: "change inside {",
     command: "ci{",
-    keywords: "delete insert inside"
+    keywords: "delete insert change inside"
   },
   {
     label: "Yank the current line",
