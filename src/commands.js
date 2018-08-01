@@ -121,22 +121,12 @@ export default [
       "move jump go to mve moe mvoe mathching curly square bracket cursor cursr crsor parenthesis"
   },
   {
-    label: "Jump to function start",
-    command: "[[",
-    keywords: "move go jump to mve moe mvoe function start cursor cursr crsor"
-  },
-  {
-    label: "Jump to block start",
-    command: "[{",
-    keywords: "move go to jump mve moe mvoe block start cursor cursr crsor"
-  },
-  {
-    label: "page up",
+    label: "Scroll by half a page up",
     command: "C-u",
     keywords: "page up pge up"
   },
   {
-    label: "page down",
+    label: "Scroll by half a page down",
     command: "C-d",
     keywords: "page down pge down"
   },
