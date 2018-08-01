@@ -1,11 +1,11 @@
 export default [
   {
-    label: "quit window",
+    label: "Quit the current window. Quit vim if this is the last window.",
     command: ":q",
-    keywords: "quit qut qti qt qti close clse"
+    keywords: "quit qut qti qt qti close clse window wndow"
   },
   {
-    label: "quit closing all files",
+    label: "Exit vim, closing all windows.",
     command: ":qa",
     keywords: "quit qut qti qt qti close clse"
   },
@@ -82,19 +82,22 @@ export default [
       "move jump go to mve last line moe mvoe end file cursor cursr crsor"
   },
   {
-    label: "move cursor to bottom of screen",
+    label: "move to bottom of window",
     command: "L",
-    keywords: "move jump go to mve moe mvoe screen bottom cursor cursr crsor"
+    keywords:
+      "move jump go to mve moe mvoe wndow wjindow screen bottom cursor cursr crsor"
   },
   {
-    label: "move cursor to top of screen",
+    label: "move to top of window",
     command: "H",
-    keywords: "move jump go to mve moe mvoe screen top cursor cursr crsor"
+    keywords:
+      "move jump go to mve moe mvoe wndow window screen top cursor cursr crsor"
   },
   {
-    label: "move cursor to middle of screen",
+    label: "move to Middle line of window on the first non-blank character",
     command: "M",
-    keywords: "move jump go to mve moe mvoe middle screen cursor cursr crsor"
+    keywords:
+      "move jump go to mve moe mvoe middle wndow window screen cursor cursr crsor"
   },
   {
     label: "move cursor to line 59.",
@@ -387,13 +390,13 @@ export default [
     keywords: "open file line"
   },
   {
-    label: "open file explorer (split screen horizontally)",
+    label: "open file explorer (split window horizontally)",
     command: ":Sex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
   },
   {
-    label: "open file explorer (split screen vertically)",
+    label: "open file explorer (split window vertically)",
     command: ":Vex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
@@ -436,17 +439,17 @@ export default [
   {
     label: "Split window horizontally",
     command: ":split",
-    keywords: "split window screen splut splt horizontally"
+    keywords: "split window wndow splut splt horizontally"
   },
   {
     label: "Split window vertically",
     command: ":vsplit",
-    keywords: "split window screen splut splt horizontally"
+    keywords: "split window wndow splut splt horizontally"
   },
   {
-    label: "change window in a splitted screen",
+    label: "switch window",
     command: "C-w w",
-    keywords: "screen window split splut splt horizontally"
+    keywords: "wndow window change switch split splut splt horizontally"
   },
   {
     label: "Reload .vimrc without restarting vim",
