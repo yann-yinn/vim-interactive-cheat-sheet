@@ -490,5 +490,11 @@ export default [
     label: "repeat last change in normal mode",
     command: ".",
     keywords: "reapet change last repeat"
+  },
+  {
+    label:
+      'Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]"',
+    command: ":help {subject}",
+    keywords: "help hlp"
   }
 ];
