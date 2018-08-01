@@ -231,7 +231,7 @@ export default [
   },
   {
     label: "Redo [count] changes which were undone",
-    command: "CTRL-R",
+    command: "CTRL-r",
     keywords: "redo undo"
   },
   {
@@ -252,7 +252,7 @@ export default [
   },
   {
     label: "Start visual mode blockwise",
-    command: "CTRL-V",
+    command: "CTRL-v",
     keywords: "visual selection blockwise"
   },
   {
@@ -419,7 +419,7 @@ export default [
   },
   {
     label: "Go to N next window",
-    command: "CTRL-W w",
+    command: "CTRL-w w",
     keywords: "window switch next"
   },
   {
