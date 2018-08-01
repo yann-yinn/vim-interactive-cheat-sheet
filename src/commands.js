@@ -2,149 +2,144 @@ export default [
   {
     label: "Quit the current window. Quit vim if this is the last window.",
     command: ":q",
-    keywords: "quit qut qti qt qti close clse window wndow"
+    keywords: "quit window close exit"
   },
   {
     label: "Write the current file and quit",
     command: ":wq",
-    keywords: "quit qut qti qt qti close clse window wndow"
+    keywords: "quit write close exit"
   },
   {
     label: 'Like ":wq", but write only when changes have been made',
     command: ":x",
-    keywords: "quit qut qti qt qti close clse window wndow"
+    keywords: "quit write close exit"
   },
   {
     label: "Exit vim, closing all windows.",
     command: ":qa",
-    keywords: "quit qut qti qt qti close clse"
+    keywords: "quit close exit"
   },
   {
     label: "Exit vim. Any changes are lost.",
     command: ":qall!",
-    keywords: "quit qut qti qt qti close clse"
+    keywords: "quit close exit"
   },
   {
     label: "Quit without saving changes",
     command: ":q!",
-    keywords: "escape exit ext close quit qut quti qt qti"
+    keywords: "quit close exit"
   },
   {
     label: "Write the current file",
     command: ":w",
-    keywords: "save write saving sve wrte"
+    keywords: "write save"
   },
   {
     label: "Insert text before the cursor",
     command: "i",
-    keywords: "insert write edit insrt"
+    keywords: "insert edit"
   },
   {
     label:
       "Save the current buffer under the name {file} and the filename of the current buffer to {file}",
     command: ":saveas {file}",
-    keywords: "save as file buffer filename"
+    keywords: "save as write file buffer filename"
   },
   {
     label: "⬅️ Move the cursor to the left",
     command: "h",
-    keywords: "move go to cursor crsor left letf mve moe mvoe"
+    keywords: "move go to left "
   },
   {
     label: "➡️ Move the cursor to the right",
     command: "l",
-    keywords: "move go to cursor crsor riht rgith right mve moe mvoe"
+    keywords: "move go to right"
   },
   {
     label: "⬆️ Move the cursor up",
     command: "k",
-    keywords: "move go to up mve moe mvoe cursor cursr crsor"
+    keywords: "move go to up"
   },
   {
     label: "⬇️ Move the cursor down",
     command: "j",
-    keywords: "move down dwn mve moe mvoe cursor cursr crsor"
+    keywords: "move go to down"
   },
   {
     label: "Move the cursor to the end of the word (inclusive)",
     command: "e",
-    keywords: "move jump go to mve moe mvoe cursor cursr word crsor"
+    keywords: "move go to"
   },
   {
     label: "Move the cursor to the begining of the word",
     command: "b",
-    keywords: "move go jump to mve moe mvoe begining cursor word cursr crsor"
+    keywords: "move go to word begining"
   },
   {
     label: "Move cursor to the beginning of the next word",
     command: "w",
-    keywords: "move jump go to word next begin mve moe mvoe cursor cursr crsor"
+    keywords: "move go to word beginning"
   },
   {
-    label: "Go to  first line of the file",
+    label: "Go to first line of the file",
     command: "gg",
-    keywords:
-      "move jump first line go to mve moe mvoe begining file cursor cursr crsor"
+    keywords: "move go to first line beginning"
   },
   {
     label: "Go to the last line and last character of the file",
     command: "G",
-    keywords:
-      "move jump go to mve last line moe mvoe end file cursor cursr crsor"
+    keywords: "move got to last line end"
   },
   {
     label: "Move to the top of window",
     command: "H",
-    keywords:
-      "move jump go to mve moe mvoe wndow window screen top cursor cursr crsor"
+    keywords: "move to top window"
   },
   {
     label: "Move to Middle line of window on the first non-blank character",
     command: "M",
-    keywords:
-      "move jump go to mve moe mvoe middle wndow window screen cursor cursr crsor"
+    keywords: "move to middle line window beggining first"
   },
   {
     label: "Move cursor to line 59.",
     command: ":59",
-    keywords: "move jump go to mve moe mvoe line cursor cursr crsor"
+    keywords: "move go to line number"
   },
   {
     label: "Move cursor to the end of line",
     command: "$",
-    keywords: "move end line jump go to mve moe mvoe column cursor cursr crsor"
+    keywords: "move to end line"
   },
   {
     label: "Move cursor to first non-blank character of the line.",
     command: "^",
-    keywords: "move end line jump go to mve moe mvoe column cursor cursr crsor"
+    keywords: "move first line beginning"
   },
   {
     label: "Move to the matching parenthesis, curly / square bracket",
     command: "%",
-    keywords:
-      "move jump go to mve moe mvoe mathching curly square bracket cursor cursr crsor parenthesis"
+    keywords: "move got to match curly square bracket parenthesis"
   },
   {
     label: "Scroll by half a page up",
     command: "C-u",
-    keywords: "page up pge up"
+    keywords: "scroll up"
   },
   {
     label: "Scroll by half a page down",
     command: "C-d",
-    keywords: "page down pge down"
+    keywords: "scrool down"
   },
   {
     label: "Delete the chararacters under the cursor until the end of the line",
     command: "D",
-    keywords: "delete dlte cut line end"
+    keywords: "delete character end line"
   },
   {
     label:
-      "Delete the word from the position cursor is on till the end of the word",
+      "Delete from the position cursor is on till the end of the current word",
     command: "dw",
-    keywords: "delete dlte cut word"
+    keywords: "delete word cut end"
   },
   {
     label: "Delete current line",
@@ -154,85 +149,85 @@ export default [
   {
     label: "Delete inside {",
     command: "di{",
-    keywords: "delete inside {"
-  },
-  {
-    label: "Yank the current line",
-    command: "yy",
-    keywords: "copy yank paste pste current line copu cpy"
-  },
-  {
-    label: "Yank the selected text to clipboard",
-    command: "y",
-    keywords: "copy yank paste pste copu cpy past pste"
-  },
-  {
-    label: "Put the text [from register x] after the cursor [count] times",
-    command: "p",
-    keywords: "paste pste psate put"
-  },
-  {
-    label: "Append text after the cursor [count] times",
-    command: "a",
-    keywords: "write insert append writing writ wrt edit editing edt"
-  },
-  {
-    label: "Append text at the end of the line [count] times",
-    keywords: "write insert append writing writ wrt edit editing edt",
-    command: "A"
+    keywords: "delete inside"
   },
   {
     label: "Delete and insert inside {",
     command: "ci{",
-    keywords: "delete dlete delte inster insert"
+    keywords: "delete insert inside"
+  },
+  {
+    label: "Yank the current line",
+    command: "yy",
+    keywords: "yank copy current line"
+  },
+  {
+    label: "Yank the selected text to clipboard",
+    command: "y",
+    keywords: "yank copy"
+  },
+  {
+    label: "Put the text [from register x] after the cursor [count] times",
+    command: "p",
+    keywords: "Put paste"
+  },
+  {
+    label: "Append text after the cursor [count] times",
+    command: "a",
+    keywords: "insert append"
+  },
+  {
+    label: "Append text at the end of the line [count] times",
+    command: "A",
+    keywords: "append insert end line"
   },
   {
     label: "Go to [count]'th occurence of {char} to the right",
     command: "f{char}",
-    keywords: "move go jump to character chracter mve"
+    keywords: "move go to character right"
   },
   {
     label: "Go to [count]'th occurence of {char} to the left",
     command: "F{char}",
-    keywords: "go move jump previous occurence find character"
+    keywords: "move go to character left"
   },
   {
     label: "Turn on syntax highlighting",
-    keywords: "syntax color sntax clor highlighting",
-    command: ":syntax on"
+    command: ":syntax on",
+    keywords: "syntax on color highlighting"
   },
   {
     label: "Turn off syntax highlighting",
-    keywords: "syntax color sntax clor highlighting",
-    command: ":syntax off"
+    command: ":syntax off",
+    keywords: "syntax off color highlighting"
   },
   {
     label: "Set syntax highlighting language",
-    keywords: "syntax color sntax clor highlighting language",
-    command: ":set syntax=javascript"
+    command: ":set syntax=javascript",
+    keywords: "syntax color language highlighting"
   },
   {
     label:
       "Begin a new line below the cursor and insert text, repeat [count] times",
     command: "o",
-    keywords: "Insert write new line below nw lne inster insert below"
+    keywords: "Insert begin new line"
   },
   {
     label:
       "Begin a new line above the cursor and insert text, repeat [count] times",
     command: "O",
-    keywords: "Insert write new line above nw lne inster insert above"
+    keywords: "Insert begin new line"
   },
   {
     label: "Undo [count] changes",
     command: "u",
-    keywords: "undo udo ndo udno ctrl-z ctrl z"
+    keywords: "undo un do un-do"
   },
   {
     label:
       "Undo all latest changes on one line, the line were the latest changes where made",
     command: "U",
-    keywords: "undo udo ndo udno ctrl-z ctrl z"
+    keywords: "undo"
   },
   {
     label: "Redo [count] changes which were undone",
@@ -243,174 +238,154 @@ export default [
     label:
       "Delete [count] characters under and after the cursor [into register x]",
     command: "x",
-    keywords: "delete character cut delte"
+    keywords: "delete character cut"
   },
   {
     label: "Start visual mode per character",
     command: "v",
-    keywords: "visual selection slecting selecting selct"
+    keywords: "visual selection character"
   },
   {
     label: "Start visual mode linewise",
     command: "V",
-    keywords: "slecting selecting selct visual line"
+    keywords: "visual selection linewise"
   },
   {
     label: "Start visual mode blockwise",
     command: "CTRL-V",
-    keywords: "slecting selecting visual block selct"
+    keywords: "visual selection blockwise"
   },
   {
     label:
       "Delete [count] characters [into register x] and start insert ( s stands for substitute)",
     command: "s",
-    keywords: "visual selection slecting selecting selct"
+    keywords: "substitute delete insert"
   },
   {
     label:
       "Delete [count] lines [into register x] and start insert (s stands for substitute)",
     command: "S",
-    keywords: "delete insert write line"
+    keywords: "substitute delete insert"
   },
   {
     label:
       "Delete from the cursor position to the end of the line and start insert.",
     command: "C",
-    keywords: "delete insert write end line"
+    keywords: "delete insert and line"
   },
   {
     label:
       "Enter replace mode : Each character you type replaces an existing character under the cursor",
     command: "R",
-    keywords: "replace write rplace replce insert insrt"
+    keywords: "replace insert character"
   },
   {
     label: "Replace the character under the cursor with {char}",
     command: "r{char}",
-    keywords: "replace write rplace replce insert insrt"
+    keywords: "replace insert character"
   },
   {
     label: "Search and replace in the whole file",
     command: ":%s/old/new/g",
-    keywords: "search find replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace"
   },
   {
     label: "search and replace in the current line",
     command: ":s/old/new/g",
-    keywords: "search find replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace"
   },
   {
     label: "Replace all occurences with confirmation",
     command: ":%s/old/new/gc",
-    keywords:
-      "search find replace occurences ocurences reaplce serch sarch sreach rplace"
+    keywords: "search find replace"
   },
   {
     label: "Search and replace (case insensitive)",
     command: ":%s/old/new/gi",
-    keywords: "search find replace reaplce serch sarch sreach rplace"
+    keywords: "search find replace"
   },
   {
     label:
       "Search forward for the [count]'th occurence of the word nearest to the cursor.",
     command: "*",
-    keywords: "search find next occurence ocurence"
+    keywords: "search find next occurence forward"
   },
   {
     label: 'Same as "*", but search backwards. ',
     command: "#",
-    keywords: "search find next occurence ocurence"
-  },
-  {
-    label: "Uppercase character",
-    command: "vU",
-    keywords: "uppercase upprcase upercase"
-  },
-  {
-    label: "Uppercase line",
-    command: "VU",
-    keywords: "uppercase upprcase upercase line"
-  },
-  {
-    label: "Lowercase character",
-    command: "vu",
-    keywords: "lower lowercase lowrecase lowrcase"
+    keywords: "search find next previous occurence backward"
   },
   {
     label:
       "Switch case of the character under the cursor and move the cursor to the right",
     command: "~",
-    keywords: "lower lowercase lowrecase lowrcase uppercase upercase uppercase"
+    keywords: "case lowercase uppercase"
   },
   {
     label: "Reindent current line",
     command: "==",
-    keywords: "autoindent indent auto-index autoindentation reindent re-indent"
+    keywords: "indent"
   },
   {
     label: "Display line numbers",
     command: ":set number",
-    keywords: "display line numbers nmbers enable line numbers"
+    keywords: "line numbers"
   },
   {
     label: "Search forward for the [count]'th occurence of {pattern}",
     command: "/{pattern}",
-    keywords: "/ ? srch find search saerch"
+    keywords: "/ ? search find"
   },
   {
     label: "Search backward for the [count]'th previous occurence of {pattern}",
     command: "?{patten}",
-    keywords: "/ ? srch find search saerch"
+    keywords: "/ ? search find"
   },
   {
     label: "Search result : next occurence in same direction",
     command: "n",
-    keywords: "/ srch find search saerch next result"
+    keywords: "/ search find occurence"
   },
   {
     label: "Search result : next occurence in opposite direction",
     command: "N",
-    keywords:
-      "/ srch earch find search saerch next result reverse opposite backward"
+    keywords: "/ search find occurence"
   },
   {
     label: "Open vim with directory listing",
     command: "vim .",
-    keywords:
-      "open file explorer dirctory directory listing browser explrer brower browsr"
+    keywords: "open file explorer directory listing"
   },
   {
     label: "Open file index.js with Vim, jumping directly at line 86",
     command: "vim index.js +86",
-    keywords: "open file line"
+    keywords: "open file line number"
   },
   {
     label: "Open file explorer (split window horizontally)",
     command: ":Sex",
-    keywords:
-      "file open explorer directory listing browser explrer brower browsr"
+    keywords: "open file explorer browser directory listing"
   },
   {
     label: "Open file explorer (split window vertically)",
     command: ":Vex",
-    keywords:
-      "file open explorer directory listing browser explrer brower browsr"
+    keywords: "open file explorer browser directory listing"
   },
   {
     label:
       "Open a new tab page with an empty window, after the current tab page",
     command: ":tabnew",
-    keywords: "Go goto open new tab"
+    keywords: "new tab"
   },
   {
     label: "Go to the next tab page",
     command: ":gt",
-    keywords: "Go to goto show next tab"
+    keywords: "Go to next tab"
   },
   {
     label: "Turn on auto-indent",
     command: ":set autoindent",
-    keywords: "set autoindent auto-indent"
+    keywords: "indent"
   },
   {
     label: "Indent",
@@ -420,62 +395,62 @@ export default [
   {
     label: "Un-indent",
     command: "<<",
-    keywords: "unindent un-indent"
+    keywords: "indent"
   },
   {
     label: "Execute {cmd} with the shell",
     command: ":!{cmd}",
-    keywords: "unix command execute unx commnd excte execte"
+    keywords: "execute command shell"
   },
   {
     label: "Load color sheme {name}",
     command: ":colo {name}",
-    keywords: "colorscheme color clor theme syntax"
+    keywords: "colorscheme"
   },
   {
     label: "Split current window horizontally",
     command: ":split",
-    keywords: "split window wndow splut splt horizontally"
+    keywords: "split window horizontally"
   },
   {
     label: "Split current window vertically",
     command: ":vsplit",
-    keywords: "split window wndow splut splt horizontally"
+    keywords: "split window horizontally"
   },
   {
     label: "Go to N next window",
     command: "CTRL-W w",
-    keywords: "wndow window change switch split splut splt horizontally"
+    keywords: "window switch next"
   },
   {
     label: "Reload .vimrc without restarting vim",
     command: ":so $MYVIMRC",
-    keywords: "reload re-load vimrc"
+    keywords: "reload .vimrc"
   },
   {
     label: "Enable mouse support",
     command: ":set mouse=a",
-    keywords: "mouse mose muse enable"
+    keywords: "mouse"
   },
   {
     label: 'Set a mark at cursor position: type "m" followed by a letter',
     command: "m{a-zA-Z}",
-    keywords: "marks bookmark mrk"
+    keywords: "bookmarks marks"
   },
   {
     label: "Jump to the mark {a-z} in the current buffer",
     command: "'{a-zA-Z}",
-    keywords: "marks bookmark mrk"
+    keywords: "bookmarks marks"
   },
   {
     label: "List all the current marks",
     command: ":marks",
-    keywords: "list marks bookmark"
+    keywords: "bookmarks marks"
   },
   {
     label: "delete all marks",
     command: ":delmarks!",
-    keywords: "delete marks bookmark"
+    keywords: "bookmarks marks"
   },
   {
     label: "Delete the specified marks",
@@ -485,12 +460,12 @@ export default [
   {
     label: "Repeat last change.",
     command: ".",
-    keywords: "reapet change last repeat rpeat"
+    keywords: "repeat last change"
   },
   {
     label:
       'Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]"',
     command: ":help {subject}",
-    keywords: "help hlp"
+    keywords: "help"
   }
 ];
