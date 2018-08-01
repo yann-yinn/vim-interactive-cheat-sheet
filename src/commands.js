@@ -172,7 +172,7 @@ export default [
     keywords: "write insert append writing writ wrt edit editing edt"
   },
   {
-    label: "Append text to the end of current line",
+    label: "Append text at the end of the line [count] times",
     keywords: "write insert append writing writ wrt edit editing edt",
     command: "A"
   },
