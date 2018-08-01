@@ -162,9 +162,9 @@ export default [
     keywords: "copy yank paste pste copu cpy past pste"
   },
   {
-    label: "paste",
+    label: "Put the text [from register x] after the cursor [count] times",
     command: "p",
-    keywords: "paste pste psate"
+    keywords: "paste pste psate put"
   },
   {
     label: "Append text following current cursor position",
