@@ -131,30 +131,35 @@ export default [
     keywords: "page down pge down"
   },
   {
+    label: "Delete the chararacters under the cursor until the end of the line",
+    command: "D",
+    keywords: "delete dlte cut line end"
+  },
+  {
     label:
-      "delete the word from the position cursor is on till the end of the word",
+      "Delete the word from the position cursor is on till the end of the word",
     command: "dw",
     keywords: "delete dlte cut word"
   },
   {
-    label: "delete current line",
+    label: "Delete current line",
     command: "dd",
     keywords: "delete cut line current"
   },
   {
-    label: "delete inside { (works with any character)",
+    label: "Delete inside {",
     command: "di{",
-    keywords: "delete code inside {"
+    keywords: "delete inside {"
   },
   {
-    label: "copy the current line",
+    label: "Yank the current line",
     command: "yy",
-    keywords: "copy paste pste current line copu cpy"
+    keywords: "copy yank paste pste current line copu cpy"
   },
   {
-    label: "Copy the selected text to clipboard",
+    label: "Yank the selected text to clipboard",
     command: "y",
-    keywords: "copy paste pste copu cpy past pste"
+    keywords: "copy yank paste pste copu cpy past pste"
   },
   {
     label: "paste",
