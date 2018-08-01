@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 /**
  * Get a list of filtered commands from search string
  */
-class CommandsFiltered extends Component {
+class CommandsQuery extends Component {
   static propTypes = {
     search: PropTypes.string.isRequired
   };
@@ -23,4 +23,4 @@ class CommandsFiltered extends Component {
   }
 }
 
-export default CommandsFiltered;
+export default CommandsQuery;

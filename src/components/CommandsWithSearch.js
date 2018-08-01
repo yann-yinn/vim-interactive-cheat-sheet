@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import CommandsList from "./CommandsList";
-import CommandsFiltered from "./CommandsFiltered";
+import CommandsQuery from "./CommandsQuery";
 import SearchForm from "./SearchForm";
-import commands from "../commands";
-import Container from "./Container";
 import NoResult from "./NoResult";
 
-class CommandSearch extends Component {
+class CommandsWithSearch extends Component {
   state = {
     search: ""
   };
@@ -17,17 +15,17 @@ class CommandSearch extends Component {
     return (
       <div>
         <SearchForm onTextChange={this.handleTextChange} />
-        <CommandsFiltered search={this.state.search}>
+        <CommandsQuery search={this.state.search}>
           {commands => {
             if (commands.length > 0) {
               return <CommandsList commands={commands} />;
             }
             return <NoResult />;
           }}
-        </CommandsFiltered>
+        </CommandsQuery>
       </div>
     );
   }
 }
 
-export default CommandSearch;
+export default CommandsWithSearch;

@@ -3,14 +3,11 @@ import commands from "./commands";
 import Header from "./components/Header";
 import ForkMe from "./components/ForkMe";
 import Footer from "./components/Footer";
-import CommandsSearch from "./components/CommandsSearch";
+import CommandsWithSearch from "./components/CommandsWithSearch";
 import Container from "./components/Container";
 import "./App.css";
 
 class App extends Component {
-  state = {
-    searched: ""
-  };
   render() {
     return (
       <div className="App">
@@ -22,7 +19,7 @@ class App extends Component {
           <div style={{ textAlign: "center" }}>
             <em>search within {commands.length} useful vim commands </em> 🤗
           </div>
-          <CommandsSearch />
+          <CommandsWithSearch />
         </Container>
         <Footer />
       </div>
