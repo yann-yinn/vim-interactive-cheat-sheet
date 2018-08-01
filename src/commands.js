@@ -207,12 +207,12 @@ export default [
     keywords: "syntax color language highlighting"
   },
   {
-    label: "Begin a new line below the cursor and insert text.",
+    label: "Open a new line below the cursor and insert text.",
     command: "o",
     keywords: "Insert begin new line"
   },
   {
-    label: "Begin a new line above the cursor and insert text",
+    label: "Open a new line above the cursor and insert text",
     command: "O",
     keywords: "Insert begin new line"
   },
