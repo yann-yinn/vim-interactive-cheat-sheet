@@ -137,7 +137,7 @@ export default [
   },
   {
     label:
-      "Delete from the position cursor is on till the end of the current word",
+      "delete (cut) the characters of the word from the cursor position to the start of the next word",
     command: "dw",
     keywords: "delete word cut end"
   },
