@@ -182,13 +182,13 @@ export default [
     keywords: "delete dlete delte inster insert"
   },
   {
-    label: 'go to character "{". Works with any character',
-    command: "f{",
+    label: "Go to [count]'th occurence of {char} to the right",
+    command: "f{char}",
     keywords: "move go jump to character chracter mve"
   },
   {
-    label: 'go to previous occurence of "{". Works with any character',
-    command: "F{",
+    label: "Go to [count]'th occurence of {char} to the left",
+    command: "F{char}",
     keywords: "go move jump previous occurence find character"
   },
   {
