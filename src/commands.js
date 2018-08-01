@@ -192,12 +192,12 @@ export default [
     keywords: "go move jump previous occurence find character"
   },
   {
-    label: "turn on syntax highlighting",
+    label: "Turn on syntax highlighting",
     keywords: "syntax color sntax clor highlighting",
     command: ":syntax on"
   },
   {
-    label: "turn off syntax highlighting",
+    label: "Turn off syntax highlighting",
     keywords: "syntax color sntax clor highlighting",
     command: ":syntax off"
   },
@@ -207,94 +207,87 @@ export default [
     command: ":set syntax=javascript"
   },
   {
-    label: "Insert at new line below",
+    label:
+      "Begin a new line below the cursor and insert text, repeat [count] times",
     command: "o",
     keywords: "Insert write new line below nw lne inster insert below"
   },
   {
-    label: "Insert at new line above",
+    label:
+      "Begin a new line above the cursor and insert text, repeat [count] times",
     command: "O",
     keywords: "Insert write new line above nw lne inster insert above"
   },
   {
-    label: "Undo",
+    label: "Undo [count] changes",
     command: "u",
     keywords: "undo udo ndo udno ctrl-z ctrl z"
   },
   {
-    label: "Undo all changes on current line",
+    label:
+      "Undo all latest changes on one line, the line were the latest changes where made",
     command: "U",
     keywords: "undo udo ndo udno ctrl-z ctrl z"
   },
   {
-    label: "Redo",
-    command: "C-r",
-    keywords: "redo"
+    label: "Redo [count] changes which were undone",
+    command: "CTRL-R",
+    keywords: "redo undo"
   },
   {
-    label: "cut current character",
+    label:
+      "Delete [count] characters under and after the cursor [into register x]",
     command: "x",
     keywords: "delete character cut delte"
   },
   {
-    label: "cut previous character",
-    command: "X",
-    keywords: "dkte delete cut delte"
-  },
-  {
-    label: "cut 3 characters. Works with any numbers",
-    command: "3x",
-    keywords: "delete cut delte"
-  },
-  {
-    label: "select text (characters)",
+    label: "Start visual mode per character",
     command: "v",
     keywords: "visual selection slecting selecting selct"
   },
   {
-    label: "select text (whole lines)",
+    label: "Start visual mode linewise",
     command: "V",
     keywords: "slecting selecting selct visual line"
   },
   {
-    label: "select text (block)",
-    command: "C-V",
+    label: "Start visual mode blockwise",
+    command: "CTRL-V",
     keywords: "slecting selecting visual block selct"
   },
   {
-    label: "replace selection",
+    label:
+      "Delete [count] characters [into register x] and start insert ( s stands for substitute)",
     command: "s",
     keywords: "visual selection slecting selecting selct"
   },
   {
-    label: "Delete line and insert",
+    label:
+      "Delete [count] lines [into register x] and start insert (s stands for substitute)",
     command: "S",
     keywords: "delete insert write line"
   },
   {
-    label: "Delete until end of line and insert",
+    label:
+      "Delete from the cursor position to the end of the line and start insert.",
     command: "C",
     keywords: "delete insert write end line"
   },
   {
-    label: "replace characters",
+    label:
+      "Enter replace mode : Each character you type replaces an existing character under the cursor",
     command: "R",
     keywords: "replace write rplace replce insert insrt"
   },
   {
-    label: "replace a single character",
-    command: "r",
+    label: "Replace the character under the cursor with {char}",
+    command: "r{char}",
     keywords: "replace write rplace replce insert insrt"
   },
   {
-    label: "search and replace in the whole file",
+    label: "Search and replace in the whole file",
     command: ":%s/old/new/g",
     keywords: "search find replace reaplce serch sarch sreach rplace"
-  },
-  {
-    label: "next occurence of the current word",
-    command: "*",
-    keywords: "search find next occurence"
   },
   {
     label: "search and replace in the current line",
@@ -308,9 +301,20 @@ export default [
       "search find replace occurences ocurences reaplce serch sarch sreach rplace"
   },
   {
-    label: "search and replace (case insensitive)",
+    label: "Search and replace (case insensitive)",
     command: ":%s/old/new/gi",
     keywords: "search find replace reaplce serch sarch sreach rplace"
+  },
+  {
+    label:
+      "Search forward for the [count]'th occurence of the word nearest to the cursor.",
+    command: "*",
+    keywords: "search find next occurence ocurence"
+  },
+  {
+    label: 'Same as "*", but search backwards. ',
+    command: "#",
+    keywords: "search find next occurence ocurence"
   },
   {
     label: "Uppercase character",
@@ -328,83 +332,75 @@ export default [
     keywords: "lower lowercase lowrecase lowrcase"
   },
   {
-    label: "Lowercase line",
-    command: "Vu",
-    keywords: "lower lowercase lowrecase lowrcase"
+    label:
+      "Switch case of the character under the cursor and move the cursor to the right",
+    command: "~",
+    keywords: "lower lowercase lowrecase lowrcase uppercase upercase uppercase"
   },
   {
-    label: "Indent whole file",
-    command: "gg=G",
-    keywords: "autoindent auto-index autoindentation reindent re-indent"
-  },
-  {
-    label: "re-indent current line",
+    label: "Reindent current line",
     command: "==",
     keywords: "autoindent indent auto-index autoindentation reindent re-indent"
   },
   {
-    label: "enable line numbers",
+    label: "Display line numbers",
     command: ":set number",
-    keywords: "display line numbers enable line numbers"
+    keywords: "display line numbers nmbers enable line numbers"
   },
   {
-    label: "search (top to bottom)",
-    command: "/myWord",
-    keywords: "/ srch find search saerch"
+    label: "Search forward for the [count]'th occurence of {pattern}",
+    command: "/{pattern}",
+    keywords: "/ ? srch find search saerch"
   },
   {
-    label: "search result : next occurence in same direction",
+    label: "Search backward for the [count]'th previous occurence of {pattern}",
+    command: "?{patten}",
+    keywords: "/ ? srch find search saerch"
+  },
+  {
+    label: "Search result : next occurence in same direction",
     command: "n",
     keywords: "/ srch find search saerch next result"
   },
   {
-    label: "search result : next occurence in opposite direction",
+    label: "Search result : next occurence in opposite direction",
     command: "N",
     keywords:
-      "/ srch earch find search saerch next result reverse opposite backwards"
+      "/ srch earch find search saerch next result reverse opposite backward"
   },
   {
-    label: "search (bottom to top)",
-    command: "?myWord",
-    keywords: "/ srch find search saerch"
-  },
-  {
-    label: "search",
-    command: "/myWord",
-    keywords: "srch earch find search saerch"
-  },
-  {
-    label: "open vim with directory listing",
+    label: "Open vim with directory listing",
     command: "vim .",
     keywords:
       "open file explorer dirctory directory listing browser explrer brower browsr"
   },
   {
-    label: "open file index.js with vim, directly at line 86",
-    command: "vi index.js +86",
+    label: "Open file index.js with Vim, jumping directly at line 86",
+    command: "vim index.js +86",
     keywords: "open file line"
   },
   {
-    label: "open file explorer (split window horizontally)",
+    label: "Open file explorer (split window horizontally)",
     command: ":Sex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
   },
   {
-    label: "open file explorer (split window vertically)",
+    label: "Open file explorer (split window vertically)",
     command: ":Vex",
     keywords:
       "file open explorer directory listing browser explrer brower browsr"
   },
   {
-    label: "open new tab",
+    label:
+      "Open a new tab page with an empty window, after the current tab page",
     command: ":tabnew",
-    keywords: "open new tab"
+    keywords: "Go goto open new tab"
   },
   {
-    label: "show next tab",
+    label: "Go to the next tab page",
     command: ":gt",
-    keywords: "show next tab"
+    keywords: "Go to goto show next tab"
   },
   {
     label: "Turn on auto-indent",
@@ -412,7 +408,7 @@ export default [
     keywords: "set autoindent auto-indent"
   },
   {
-    label: "indent",
+    label: "Indent",
     command: ">>",
     keywords: "indent"
   },
@@ -422,28 +418,28 @@ export default [
     keywords: "unindent un-indent"
   },
   {
-    label: `execute a unix command - example with "ls"`,
-    command: ":!ls",
+    label: "Execute {cmd} with the shell",
+    command: ":!{cmd}",
     keywords: "unix command execute unx commnd excte execte"
   },
   {
-    label: "Change colorscheme to blue theme. Use tab to browse colorschemes.",
-    command: ":colo blue",
+    label: "Load color sheme {name}",
+    command: ":colo {name}",
     keywords: "colorscheme color clor theme syntax"
   },
   {
-    label: "Split window horizontally",
+    label: "Split current window horizontally",
     command: ":split",
     keywords: "split window wndow splut splt horizontally"
   },
   {
-    label: "Split window vertically",
+    label: "Split current window vertically",
     command: ":vsplit",
     keywords: "split window wndow splut splt horizontally"
   },
   {
-    label: "switch window",
-    command: "C-w w",
+    label: "Go to N next window",
+    command: "CTRL-W w",
     keywords: "wndow window change switch split splut splt horizontally"
   },
   {
@@ -452,27 +448,22 @@ export default [
     keywords: "reload re-load vimrc"
   },
   {
-    label: "Jump to the beginning of the line (first non-blank character)",
-    command: "^",
-    keywords: "go to start beginning line jump"
-  },
-  {
-    label: "enable mouse support",
+    label: "Enable mouse support",
     command: ":set mouse=a",
     keywords: "mouse mose muse enable"
   },
   {
-    label: 'set a mark : type "m" followed by a letter',
-    command: "ma",
-    keywords: "marks bookmark"
+    label: 'Set a mark at cursor position: type "m" followed by a letter',
+    command: "m{a-zA-Z}",
+    keywords: "marks bookmark mrk"
   },
   {
-    label: 'jump to mark "a"',
-    command: "'a",
-    keywords: "marks bookmark"
+    label: "Jump to the mark {a-z} in the current buffer",
+    command: "'{a-zA-Z}",
+    keywords: "marks bookmark mrk"
   },
   {
-    label: "list all marks",
+    label: "List all the current marks",
     command: ":marks",
     keywords: "list marks bookmark"
   },
@@ -482,14 +473,14 @@ export default [
     keywords: "delete marks bookmark"
   },
   {
-    label: 'delete mark "a"',
-    command: ":delmarks a",
+    label: "Delete the specified marks",
+    command: ":delmarks {marks}",
     keywords: "delete marks bookmark"
   },
   {
-    label: "repeat last change in normal mode",
+    label: "Repeat last change.",
     command: ".",
-    keywords: "reapet change last repeat"
+    keywords: "reapet change last repeat rpeat"
   },
   {
     label:
