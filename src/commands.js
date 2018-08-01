@@ -41,90 +41,84 @@ export default [
     keywords: "save as file buffer filename"
   },
   {
-    label: "⬅️ move left",
+    label: "⬅️ Move the cursor to the left",
     command: "h",
     keywords: "move go to cursor crsor left letf mve moe mvoe"
   },
   {
-    label: "➡️ move right",
+    label: "➡️ Move the cursor to the right",
     command: "l",
     keywords: "move go to cursor crsor riht rgith right mve moe mvoe"
   },
   {
-    label: "⬆️ move up",
+    label: "⬆️ Move the cursor up",
     command: "k",
     keywords: "move go to up mve moe mvoe cursor cursr crsor"
   },
   {
-    label: "⬇️ move down",
+    label: "⬇️ Move the cursor down",
     command: "j",
     keywords: "move down dwn mve moe mvoe cursor cursr crsor"
   },
   {
-    label: "move the cursor to the end of the word",
+    label: "Move the cursor to the end of the word (inclusive)",
     command: "e",
     keywords: "move jump go to mve moe mvoe cursor cursr word crsor"
   },
   {
-    label: "move the cursor to the begining of the word",
+    label: "Move the cursor to the begining of the word",
     command: "b",
     keywords: "move go jump to mve moe mvoe begining cursor word cursr crsor"
   },
   {
-    label: "move cursor to the beginning of the next word",
+    label: "Move cursor to the beginning of the next word",
     command: "w",
-    keywords: "move jump go to word mve moe mvoe cursor cursr crsor"
+    keywords: "move jump go to word next begin mve moe mvoe cursor cursr crsor"
   },
   {
-    label: "move cursor to the begining of the file",
+    label: "Go to  first line of the file",
     command: "gg",
     keywords:
       "move jump first line go to mve moe mvoe begining file cursor cursr crsor"
   },
   {
-    label: "move cursor to the end of the file",
+    label: "Go to the last line and last character of the file",
     command: "G",
     keywords:
       "move jump go to mve last line moe mvoe end file cursor cursr crsor"
   },
   {
-    label: "move to bottom of window",
-    command: "L",
-    keywords:
-      "move jump go to mve moe mvoe wndow wjindow screen bottom cursor cursr crsor"
-  },
-  {
-    label: "move to top of window",
+    label: "Move to the top of window",
     command: "H",
     keywords:
       "move jump go to mve moe mvoe wndow window screen top cursor cursr crsor"
   },
   {
-    label: "move to Middle line of window on the first non-blank character",
+    label: "Move to Middle line of window on the first non-blank character",
     command: "M",
     keywords:
       "move jump go to mve moe mvoe middle wndow window screen cursor cursr crsor"
   },
   {
-    label: "move cursor to line 59.",
+    label: "Move cursor to line 59.",
     command: ":59",
     keywords: "move jump go to mve moe mvoe line cursor cursr crsor"
   },
   {
-    label: "move cursor to column 20.",
-    command: "20|",
-    keywords: "move jump go to mve moe mvoe column cursor cursr crsor"
-  },
-  {
-    label: "move cursor to the end of line",
+    label: "Move cursor to the end of line",
     command: "$",
     keywords: "move end line jump go to mve moe mvoe column cursor cursr crsor"
   },
   {
-    label: "move cursor to matching parenthesis.",
+    label: "Move cursor to first non-blank character of the line.",
+    command: "^",
+    keywords: "move end line jump go to mve moe mvoe column cursor cursr crsor"
+  },
+  {
+    label: "Move to the matching parenthesis, curly / square bracket",
     command: "%",
     keywords:
-      "move jump go to mve moe mvoe mathching cursor cursr crsor parenthesis"
+      "move jump go to mve moe mvoe mathching curly square bracket cursor cursr crsor parenthesis"
   },
   {
     label: "Jump to function start",
