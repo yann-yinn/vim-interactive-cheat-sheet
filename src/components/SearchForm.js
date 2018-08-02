@@ -27,6 +27,7 @@ export default class extends React.Component {
       <div className="Search">
         <form onSubmit={this.handleSubmit}>
           <input
+            placeholder="search"
             value={this.state.text}
             onChange={this.handleChange}
             type="text"

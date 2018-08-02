@@ -5,8 +5,8 @@ export default [
     keywords: "help"
   },
   {
-    label: `Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]". Examples : <br />
-       <code>:help :x</code>`,
+    label: `Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]". <em>Examples :</em><br />
+    <code>:help :x</code> <code>:help /</code>`,
     command: ":help {subject}",
     keywords: "help"
   },
@@ -18,12 +18,12 @@ export default [
   {
     label: "Write the current file and quit",
     command: ":wq",
-    keywords: "quit write close exit"
+    keywords: "quit window write save close exit"
   },
   {
     label: 'Like ":wq", but write only when changes have been made',
     command: ":x",
-    keywords: "quit write close exit"
+    keywords: "quit write save close exit"
   },
   {
     label: "Exit vim, closing all windows.",
@@ -59,12 +59,12 @@ export default [
   {
     label: "⬅️ Move the cursor to the left",
     command: "h",
-    keywords: "move go to left "
+    keywords: "move cursor go to left "
   },
   {
     label: "➡️ Move the cursor to the right",
     command: "l",
-    keywords: "move go to right"
+    keywords: "move cursor go to right"
   },
   {
     label: "⬆️ Move the cursor up",
@@ -74,52 +74,52 @@ export default [
   {
     label: "⬇️ Move the cursor down",
     command: "j",
-    keywords: "move go to down"
+    keywords: "move cursor go to down"
   },
   {
     label: "Move the cursor to the end of the word (inclusive)",
     command: "e",
-    keywords: "move go to"
+    keywords: "move cursor go to"
   },
   {
     label: "Move the cursor to the begining of the word",
     command: "b",
-    keywords: "move go to word begining"
+    keywords: "move cursor go to word begining"
   },
   {
     label: "Move cursor to the beginning of the next word",
     command: "w",
-    keywords: "move go to word beginning"
+    keywords: "move cursor go to word beginning"
   },
   {
     label: "Go to first line of the file",
     command: "gg",
-    keywords: "move go to first line beginning"
+    keywords: "move cursor go to first line beginning"
   },
   {
     label: "Go to the last line and last character of the file",
     command: "G",
-    keywords: "move got to last line end"
+    keywords: "move cursor got to last line end"
   },
   {
     label: "Move to the top of window",
     command: "H",
-    keywords: "move to top window"
+    keywords: "move cursor to top window"
   },
   {
     label: "Move to Middle line of window on the first non-blank character",
     command: "M",
-    keywords: "move to middle line window beggining first"
+    keywords: "move cursor to middle line window beggining first"
   },
   {
     label: "Move cursor to line 59.",
     command: ":59",
-    keywords: "move go to line number"
+    keywords: "move cursor go to line number"
   },
   {
     label: "Move cursor to the end of line",
     command: "$",
-    keywords: "move to end line"
+    keywords: "move cursor to end line"
   },
   {
     label: "Move cursor to first non-blank character of the line.",
@@ -291,6 +291,27 @@ export default [
     keywords: "replace insert character"
   },
   {
+    label: `Search forward for the occurences of {pattern}. <em>Examples :</em><br />
+    <code>/Hello</code>`,
+    command: "/{pattern}",
+    keywords: "/ ? search find"
+  },
+  {
+    label: "Search backward for the occurences of {pattern}",
+    command: "?{patten}",
+    keywords: "/ ? search find"
+  },
+  {
+    label: "Search result : next occurence in same direction",
+    command: "n",
+    keywords: "/ search find occurence"
+  },
+  {
+    label: "Search result : next occurence in opposite direction",
+    command: "N",
+    keywords: "/ search find occurence"
+  },
+  {
     label: "Search and replace in the whole file",
     command: ":%s/old/new/g",
     keywords: "search find replace"
@@ -336,26 +357,6 @@ export default [
     label: "Display line numbers",
     command: ":set number",
     keywords: "line numbers"
-  },
-  {
-    label: "Search forward for the occurences of {pattern}",
-    command: "/{pattern}",
-    keywords: "/ ? search find"
-  },
-  {
-    label: "Search backward for the occurences of {pattern}",
-    command: "?{patten}",
-    keywords: "/ ? search find"
-  },
-  {
-    label: "Search result : next occurence in same direction",
-    command: "n",
-    keywords: "/ search find occurence"
-  },
-  {
-    label: "Search result : next occurence in opposite direction",
-    command: "N",
-    keywords: "/ search find occurence"
   },
   {
     label: "Open vim with directory listing",
@@ -439,12 +440,14 @@ export default [
     keywords: "mouse"
   },
   {
-    label: 'Set a mark at cursor position: type "m" followed by a letter',
+    label: `Set a mark at cursor position: type "m" followed by a letter. <em>Examples</em>:<br /> 
+    <code>ma</code>`,
     command: "m{a-zA-Z}",
     keywords: "bookmarks marks"
   },
   {
-    label: "Jump to the mark {a-z} in the current buffer",
+    label: `Jump to the mark {a-z} in the current buffer. <em>Examples</em>
+    <code>'a</code>`,
     command: "'{a-zA-Z}",
     keywords: "bookmarks marks"
   },

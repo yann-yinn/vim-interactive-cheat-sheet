@@ -1,6 +1,6 @@
 .CommandsList code {
   white-space: nowrap;
-  background-color: hsla(0,0%,0%,0.04);
+  background-color: lavender;
   display: inline-block;
   padding: 0 0.5rem;
 }
@@ -11,8 +11,9 @@
 
 .CommandsList .label-wrapper code {
   margin-top: 0.5rem;
+  background-color: hsla(0,0%,0%,0.04);
 }
 
 .CommandsList .label {
-  padding-left: 1rem;
+  padding-left: rem;
 }
