@@ -1,29 +1,18 @@
-.CommandsList table {
-  margin: auto;
-  text-align: left;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 17px;
+.CommandsList code {
+  white-space: nowrap;
+  background-color: hsla(0,0%,0%,0.04);
+  display: inline-block;
+  padding: 0 0.5rem;
 }
 
-.CommandsList .command {
+.CommandsList .label-wrapper {
   width: 70%;
 }
 
-.CommandsList .command {
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  width: 30%;
+.CommandsList .label-wrapper code {
+  margin-top: 0.5rem;
 }
 
-.CommandsList table tr td {
-  padding: 10px;
-}
-
-.CommandsList table tr td {
-  border-bottom: solid silver 1px;
-}
-
-.CommandsList .description {
-  font-size: 15px;
+.CommandsList .label {
+  padding-left: 1rem;
 }

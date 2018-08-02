@@ -6,7 +6,7 @@ import "./CommandsList.css";
  * Display a list of commands
  */
 export default class CommandsList extends React.Component {
-  static PropTypes = {
+  static propTypes = {
     commands: PropTypes.arrayOf(PropTypes.object)
   };
   idFromString = string => {
@@ -20,8 +20,15 @@ export default class CommandsList extends React.Component {
             {this.props.commands.map((command, index) => {
               return (
                 <tr key={this.idFromString(command.label)}>
-                  <td className="label ">{command.label}</td>
-                  <td className="command">{command.command}</td>
+                  <td className="label-wrapper">
+                    <div
+                      className="label"
+                      dangerouslySetInnerHTML={{ __html: command.label }}
+                    />
+                  </td>
+                  <td className="command">
+                    <code>{command.command}</code>
+                  </td>
                 </tr>
               );
             })}

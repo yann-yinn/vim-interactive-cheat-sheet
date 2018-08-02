@@ -1,10 +1,10 @@
 .Search {
   text-align: center;
-  margin: 40px;
+  margin: 1rem;
 }
 
 .Search input[type="text"] {
-  padding: 0.5rem;
+  padding: 0 1rem;
   font-size: 40px;
   max-width: 300px;
 }

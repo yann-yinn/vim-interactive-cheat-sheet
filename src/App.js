@@ -5,7 +5,7 @@ import ForkMe from "./components/ForkMe";
 import Footer from "./components/Footer";
 import CommandsWithSearch from "./components/CommandsWithSearch";
 import Container from "./components/Container";
-import "./App.css";
+import "./typography.css";
 
 class App extends Component {
   render() {

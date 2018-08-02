@@ -1,5 +1,16 @@
 export default [
   {
+    label: "Open a window and display the help file",
+    command: ":help",
+    keywords: "help"
+  },
+  {
+    label: `Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]". Examples : <br />
+       <code>:help :x</code>`,
+    command: ":help {subject}",
+    keywords: "help"
+  },
+  {
     label: "Quit the current window. Quit vim if this is the last window.",
     command: ":q",
     keywords: "quit window close exit"
@@ -456,11 +467,5 @@ export default [
     label: "Repeat last change.",
     command: ".",
     keywords: "repeat last change"
-  },
-  {
-    label:
-      'Display help about {subject}. {subject} can include wildcards like "*", "?" and "[a-z]"',
-    command: ":help {subject}",
-    keywords: "help"
   }
 ];
