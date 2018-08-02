@@ -119,22 +119,27 @@ export default [
   {
     label: "Move cursor to line 59.",
     command: ":59",
-    keywords: "move cursor go to line number"
+    keywords: "move go cursor go to line number"
   },
   {
     label: "Move cursor to the end of line",
     command: "$",
-    keywords: "move cursor to end line"
+    keywords: "move go cursor to end line"
   },
   {
-    label: "Move cursor to first non-blank character of the line.",
+    label: "Move cursor to the first non-blank character of the line.",
     command: "^",
-    keywords: "move first line beginning"
+    keywords: "move go cursor first line beginning non-blank"
+  },
+  {
+    label: "Move cursor to the first character of the line.",
+    command: "0",
+    keywords: "move go cursor first line beginning"
   },
   {
     label: "Move to the matching parenthesis, curly / square bracket",
     command: "%",
-    keywords: "move got to match curly square bracket parenthesis"
+    keywords: "move go cursor to match curly square bracket parenthesis"
   },
   {
     label: "Scroll by half a page up",
