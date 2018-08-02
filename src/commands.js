@@ -405,12 +405,12 @@ export default [
     keywords: "indent"
   },
   {
-    label: "Indent",
+    label: "Indent current line",
     command: ">>",
     keywords: "indent"
   },
   {
-    label: "Un-indent",
+    label: "Un-indent current line",
     command: "<<",
     keywords: "indent"
   },
