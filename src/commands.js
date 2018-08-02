@@ -32,7 +32,7 @@ export default [
   },
   {
     label: "Exit vim. Any changes are lost.",
-    command: ":qall!",
+    command: ":qa!",
     keywords: "quit close exit"
   },
   {
@@ -94,22 +94,27 @@ export default [
   {
     label: "Go to first line of the file",
     command: "gg",
-    keywords: "move cursor go to first line beginning"
+    keywords: "move go cursor to first line beginning"
   },
   {
     label: "Go to the last line and last character of the file",
     command: "G",
-    keywords: "move cursor got to last line end"
+    keywords: "move go cursor to last line end"
   },
   {
     label: "Move to the top of window",
     command: "H",
-    keywords: "move cursor to top window"
+    keywords: "move go cursor top window"
   },
   {
-    label: "Move to Middle line of window on the first non-blank character",
+    label: "Move to Middle of window",
     command: "M",
-    keywords: "move cursor to middle line window beggining first"
+    keywords: "move go cursor to middle line window beggining first"
+  },
+  {
+    label: "Move to the bottom of window",
+    command: "L",
+    keywords: "move go cursor bottom window"
   },
   {
     label: "Move cursor to line 59.",
@@ -386,7 +391,7 @@ export default [
   },
   {
     label: "Go to the next tab page",
-    command: ":gt",
+    command: "gt",
     keywords: "Go to next tab"
   },
   {
@@ -425,7 +430,7 @@ export default [
     keywords: "split window horizontally"
   },
   {
-    label: "Go to N next window",
+    label: "Go to the next window",
     command: "CTRL-w w",
     keywords: "window switch next"
   },

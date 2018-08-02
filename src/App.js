@@ -14,11 +14,13 @@ class App extends Component {
         <ForkMe
           url={"https://github.com/nyl-auster/vim-interactive-cheat-sheet"}
         />
-        {/*<Header />*/}
+        <Header />
         <Container>
+          {/*
           <div style={{ textAlign: "center" }}>
             <h4>Search within {commands.length} vim commands </h4>
           </div>
+          */}
           <CommandsWithSearch />
         </Container>
         <Footer />
