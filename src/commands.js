@@ -173,7 +173,7 @@ export default [
     keywords: "delete inside"
   },
   {
-    label: "change inside {",
+    label: "Change inside {",
     command: "ci{",
     keywords: "delete insert change inside"
   },
