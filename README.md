@@ -15,8 +15,6 @@ yarn start
 
 ## contribute
 
-Install Prettier formatter.
-
 All the commands are declared in _src/commands.js_ file : just edit it and submit a PR 🦄
 
 Need vim configuration for React ? check https://github.com/nyl-auster/react-vim
